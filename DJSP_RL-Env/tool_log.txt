@@ -1,0 +1,570 @@
+/mnt/nfs/work/oo12374/JSP/origin/DJSP_RL-Env/args.json
+Deterministic
+/mnt/nfs/work/oo12374/JSP/origin/DJSP_RL-Env/args.json
+ Job|  arrival| due date|   finish|
+-----------------------------------
+   0|     0.00|    90.25｜     0.00｜
+-----------------------------------
+   1|     0.00|   146.70｜     0.00｜
+-----------------------------------
+   2|     0.00|   149.17｜     0.00｜
+-----------------------------------
+   3|     0.00|   159.97｜     0.00｜
+-----------------------------------
+   4|     0.00|   102.03｜     0.00｜
+-----------------------------------
+load basic rules
+./test_instance/Case13/validate_1.json
+schedule
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 0, machine_id: 1, op_id: 0, op.startTime: 0, op.RPT: 35.14449407101389
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 1, machine_id: 0, op_id: 0, op.startTime: 0, op.RPT: 13.827908476087654
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 2, machine_id: 3, op_id: 0, op.startTime: 0, op.RPT: 10.460629130277365
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 9, machine_id: 2, op_id: 0, op.startTime: 0, op.RPT: 27.63068807518655
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 3, machine_id: 4, op_id: 0, op.startTime: 0, op.RPT: 46.44900370481863
+   op["currentTime"]: 10.460629130277365, machineTime: 10.460629130277365
+   job_id: 2, machine_id: 3, op_id: 1, op.startTime: 10.460629130277365, op.RPT: 38.98240240203088
+   op["currentTime"]: 13.827908476087654, machineTime: 13.827908476087654
+   job_id: 4, machine_id: 0, op_id: 0, op.startTime: 13.827908476087654, op.RPT: 35.390912113294306
+   op["currentTime"]: 27.63068807518655, machineTime: 27.63068807518655
+   job_id: 9, machine_id: 2, op_id: 1, op.startTime: 27.63068807518655, op.RPT: 29.60223770746737
+   op["currentTime"]: 35.14449407101389, machineTime: 35.14449407101389
+   job_id: 0, machine_id: 1, op_id: 1, op.startTime: 35.14449407101389, op.RPT: 35.51561932492727
+   op["currentTime"]: 46.44900370481863, machineTime: 46.44900370481863
+   job_id: 3, machine_id: 4, op_id: 1, op.startTime: 46.44900370481863, op.RPT: 46.236994530240956
+   op["currentTime"]: 49.21882058938196, machineTime: 49.21882058938196
+   job_id: 10, machine_id: 0, op_id: 0, op.startTime: 49.21882058938196, op.RPT: 48.13045660308053
+   op["currentTime"]: 49.44303153230824, machineTime: 49.44303153230824
+   job_id: 1, machine_id: 3, op_id: 1, op.startTime: 49.44303153230824, op.RPT: 38.98240240203088
+   op["currentTime"]: 57.23292578265392, machineTime: 57.23292578265392
+   job_id: 5, machine_id: 2, op_id: 0, op.startTime: 57.23292578265392, op.RPT: 10.472523291638458
+   op["currentTime"]: 67.70544907429237, machineTime: 67.70544907429237
+   job_id: 5, machine_id: 2, op_id: 1, op.startTime: 67.70544907429237, op.RPT: 39.86883144173152
+   op["currentTime"]: 70.66011339594115, machineTime: 70.66011339594115
+   job_id: 4, machine_id: 1, op_id: 1, op.startTime: 70.66011339594115, op.RPT: 15.118448184800645
+   op["currentTime"]: 85.7785615807418, machineTime: 85.7785615807418
+   job_id: 11, machine_id: 1, op_id: 0, op.startTime: 85.7785615807418, op.RPT: 35.14449407101389
+   op["currentTime"]: 97.3492771924625, machineTime: 88.42543393433911
+   job_id: 10, machine_id: 3, op_id: 1, op.startTime: 97.3492771924625, op.RPT: 21.609895527145646
+   op["currentTime"]: 107.57428051602389, machineTime: 92.68599823505959
+   job_id: 5, machine_id: 4, op_id: 2, op.startTime: 107.57428051602389, op.RPT: 13.796275598978834
+   op["currentTime"]: 118.95917271960815, machineTime: 97.3492771924625
+   job_id: 6, machine_id: 0, op_id: 0, op.startTime: 118.95917271960815, op.RPT: 43.65459180283236
+   op["currentTime"]: 120.92305565175567, machineTime: 118.95917271960815
+   job_id: 11, machine_id: 3, op_id: 1, op.startTime: 120.92305565175567, op.RPT: 38.98240240203088
+   op["currentTime"]: 121.37055611500273, machineTime: 107.57428051602389
+   job_id: 7, machine_id: 2, op_id: 0, op.startTime: 121.37055611500273, op.RPT: 10.472523291638458
+   op["currentTime"]: 131.84307940664118, machineTime: 120.92305565175567
+   job_id: 7, machine_id: 1, op_id: 1, op.startTime: 131.84307940664118, op.RPT: 32.30110997867021
+   op["currentTime"]: 159.90545805378656, machineTime: 131.84307940664118
+   job_id: 8, machine_id: 2, op_id: 0, op.startTime: 159.90545805378656, op.RPT: 10.472523291638458
+   op["currentTime"]: 162.6137645224405, machineTime: 121.37055611500273
+   job_id: 6, machine_id: 4, op_id: 1, op.startTime: 162.6137645224405, op.RPT: 24.78686745292636
+   op["currentTime"]: 164.1441893853114, machineTime: 164.1441893853114
+   job_id: 7, machine_id: 1, op_id: 2, op.startTime: 164.1441893853114, op.RPT: 10.552359434918204
+   op["currentTime"]: 170.377981345425, machineTime: 159.90545805378656
+   job_id: 8, machine_id: 3, op_id: 1, op.startTime: 170.377981345425, op.RPT: 29.10982908146183
+   op["currentTime"]: 178.19691185389433, machineTime: 162.6137645224405
+   job_id: 12, machine_id: 0, op_id: 0, op.startTime: 178.19691185389433, op.RPT: 43.65459180283236
+   op["currentTime"]: 187.40063197536688, machineTime: 170.377981345425
+   job_id: 6, machine_id: 2, op_id: 2, op.startTime: 187.40063197536688, op.RPT: 45.17182764070423
+   op["currentTime"]: 189.95378737403172, machineTime: 174.6965488202296
+   job_id: 13, machine_id: 1, op_id: 0, op.startTime: 189.95378737403172, op.RPT: 35.14449407101389
+   op["currentTime"]: 199.48781042688685, machineTime: 199.48781042688685
+   job_id: 15, machine_id: 3, op_id: 0, op.startTime: 199.48781042688685, op.RPT: 10.460629130277365
+   op["currentTime"]: 209.94843955716422, machineTime: 209.94843955716422
+   job_id: 15, machine_id: 3, op_id: 1, op.startTime: 209.94843955716422, op.RPT: 38.98240240203088
+   op["currentTime"]: 221.8515036567267, machineTime: 187.40063197536688
+   job_id: 8, machine_id: 4, op_id: 2, op.startTime: 221.8515036567267, op.RPT: 13.796275598978834
+   op["currentTime"]: 225.09828144504561, machineTime: 225.09828144504561
+   job_id: 13, machine_id: 1, op_id: 1, op.startTime: 225.09828144504561, op.RPT: 35.51561932492727
+   op["currentTime"]: 232.57245961607111, machineTime: 232.57245961607111
+   job_id: 14, machine_id: 2, op_id: 0, op.startTime: 232.57245961607111, op.RPT: 27.63068807518655
+   op["currentTime"]: 235.64777925570553, machineTime: 235.64777925570553
+   job_id: 12, machine_id: 4, op_id: 1, op.startTime: 235.64777925570553, op.RPT: 24.78686745292636
+   op["currentTime"]: 249.85199096311726, machineTime: 248.9308419591951
+   job_id: 16, machine_id: 3, op_id: 0, op.startTime: 249.85199096311726, op.RPT: 48.535501633613855
+   op["currentTime"]: 260.20314769125764, machineTime: 260.20314769125764
+   job_id: 14, machine_id: 2, op_id: 1, op.startTime: 260.20314769125764, op.RPT: 29.60223770746737
+   op["currentTime"]: 260.4346467086319, machineTime: 260.4346467086319
+   job_id: 12, machine_id: 4, op_id: 2, op.startTime: 260.4346467086319, op.RPT: 13.796275598978834
+   op["currentTime"]: 274.96839658253424, machineTime: 221.8515036567267
+   job_id: 17, machine_id: 0, op_id: 0, op.startTime: 274.96839658253424, op.RPT: 43.65459180283236
+   op["currentTime"]: 298.38749259673114, machineTime: 260.6139007699729
+   job_id: 16, machine_id: 1, op_id: 1, op.startTime: 298.38749259673114, op.RPT: 20.0766569867293
+   op["currentTime"]: 306.5429647507543, machineTime: 289.80538539872504
+   job_id: 18, machine_id: 2, op_id: 0, op.startTime: 306.5429647507543, op.RPT: 27.63068807518655
+   op["currentTime"]: 318.6229883853666, machineTime: 274.2309223076107
+   job_id: 17, machine_id: 4, op_id: 1, op.startTime: 318.6229883853666, op.RPT: 24.78686745292636
+   op["currentTime"]: 334.17365282594085, machineTime: 318.4641495834604
+   job_id: 18, machine_id: 1, op_id: 1, op.startTime: 334.17365282594085, op.RPT: 20.0766569867293
+   op["currentTime"]: 343.40985583829297, machineTime: 334.17365282594085
+   job_id: 17, machine_id: 2, op_id: 2, op.startTime: 343.40985583829297, op.RPT: 45.17182764070423
+   op["currentTime"]: 361.27697875883695, machineTime: 298.38749259673114
+   job_id: 19, machine_id: 3, op_id: 0, op.startTime: 361.27697875883695, op.RPT: 10.460629130277365
+   op["currentTime"]: 370.12115619417784, machineTime: 354.25030981267014
+   job_id: 20, machine_id: 1, op_id: 0, op.startTime: 370.12115619417784, op.RPT: 27.72156270400872
+   op["currentTime"]: 371.7376078891143, machineTime: 371.7376078891143
+   job_id: 19, machine_id: 3, op_id: 1, op.startTime: 371.7376078891143, op.RPT: 38.98240240203088
+   op["currentTime"]: 397.84271889818655, machineTime: 388.5816834789972
+   job_id: 20, machine_id: 2, op_id: 1, op.startTime: 397.84271889818655, op.RPT: 29.60223770746737
+   op["currentTime"]: 428.52270768000164, machineTime: 397.84271889818655
+   job_id: 21, machine_id: 1, op_id: 0, op.startTime: 428.52270768000164, op.RPT: 27.72156270400872
+   op["currentTime"]: 433.8573024556078, machineTime: 410.7200102911452
+   job_id: 22, machine_id: 3, op_id: 0, op.startTime: 433.8573024556078, op.RPT: 48.535501633613855
+   op["currentTime"]: 456.24427038401035, machineTime: 427.44495660565394
+   job_id: 21, machine_id: 2, op_id: 1, op.startTime: 456.24427038401035, op.RPT: 29.60223770746737
+   op["currentTime"]: 470.9526446300558, machineTime: 318.6229883853666
+   job_id: 23, machine_id: 0, op_id: 0, op.startTime: 470.9526446300558, op.RPT: 48.13045660308053
+   op["currentTime"]: 482.39280408922167, machineTime: 456.24427038401035
+   job_id: 22, machine_id: 1, op_id: 1, op.startTime: 482.39280408922167, op.RPT: 20.0766569867293
+   op["currentTime"]: 493.8477629866475, machineTime: 482.39280408922167
+   job_id: 24, machine_id: 3, op_id: 0, op.startTime: 493.8477629866475, op.RPT: 10.460629130277365
+   op["currentTime"]: 503.5146004643386, machineTime: 343.40985583829297
+   job_id: 25, machine_id: 4, op_id: 0, op.startTime: 503.5146004643386, op.RPT: 46.44900370481863
+   op["currentTime"]: 504.3083921169249, machineTime: 502.46946107595096
+   job_id: 24, machine_id: 1, op_id: 1, op.startTime: 504.3083921169249, op.RPT: 35.51561932492727
+   op["currentTime"]: 517.7446370740757, machineTime: 504.3083921169249
+   job_id: 26, machine_id: 3, op_id: 0, op.startTime: 517.7446370740757, op.RPT: 16.443198914976147
+   op["currentTime"]: 519.0831012331363, machineTime: 519.0831012331363
+   job_id: 27, machine_id: 0, op_id: 0, op.startTime: 519.0831012331363, op.RPT: 13.827908476087654
+   op["currentTime"]: 532.9110097092239, machineTime: 532.9110097092239
+   job_id: 23, machine_id: 0, op_id: 1, op.startTime: 532.9110097092239, op.RPT: 41.756240303645356
+   op["currentTime"]: 534.1878359890519, machineTime: 534.1878359890519
+   job_id: 27, machine_id: 3, op_id: 1, op.startTime: 534.1878359890519, op.RPT: 38.98240240203088
+   op["currentTime"]: 546.0483173645424, machineTime: 539.8240114418521
+   job_id: 29, machine_id: 1, op_id: 0, op.startTime: 546.0483173645424, op.RPT: 35.14449407101389
+   op["currentTime"]: 549.9636041691573, machineTime: 549.9636041691573
+   job_id: 25, machine_id: 4, op_id: 1, op.startTime: 549.9636041691573, op.RPT: 46.236994530240956
+   op["currentTime"]: 573.1702383910828, machineTime: 573.1702383910828
+   job_id: 26, machine_id: 3, op_id: 1, op.startTime: 573.1702383910828, op.RPT: 21.609895527145646
+   op["currentTime"]: 574.6672500128692, machineTime: 574.6672500128692
+   job_id: 28, machine_id: 0, op_id: 0, op.startTime: 574.6672500128692, op.RPT: 35.390912113294306
+   op["currentTime"]: 581.1928114355563, machineTime: 581.1928114355563
+   job_id: 29, machine_id: 1, op_id: 1, op.startTime: 581.1928114355563, op.RPT: 35.51561932492727
+   op["currentTime"]: 594.7801339182284, machineTime: 594.7801339182284
+   job_id: 31, machine_id: 3, op_id: 0, op.startTime: 594.7801339182284, op.RPT: 10.460629130277365
+   op["currentTime"]: 596.2005986993983, machineTime: 596.2005986993983
+   job_id: 30, machine_id: 4, op_id: 0, op.startTime: 596.2005986993983, op.RPT: 46.44900370481863
+   op["currentTime"]: 598.3350916219257, machineTime: 485.84650809147774
+   job_id: 33, machine_id: 2, op_id: 0, op.startTime: 598.3350916219257, op.RPT: 27.63068807518655
+   op["currentTime"]: 605.2407630485058, machineTime: 605.2407630485058
+   job_id: 31, machine_id: 3, op_id: 1, op.startTime: 605.2407630485058, op.RPT: 38.98240240203088
+   op["currentTime"]: 610.0581621261636, machineTime: 610.0581621261636
+   job_id: 32, machine_id: 0, op_id: 0, op.startTime: 610.0581621261636, op.RPT: 35.390912113294306
+   op["currentTime"]: 616.7084307604836, machineTime: 616.7084307604836
+   job_id: 28, machine_id: 1, op_id: 1, op.startTime: 616.7084307604836, op.RPT: 15.118448184800645
+   op["currentTime"]: 625.9657796971122, machineTime: 625.9657796971122
+   job_id: 33, machine_id: 2, op_id: 1, op.startTime: 625.9657796971122, op.RPT: 29.60223770746737
+   op["currentTime"]: 642.6496024042169, machineTime: 631.8268789452842
+   job_id: 30, machine_id: 1, op_id: 1, op.startTime: 642.6496024042169, op.RPT: 15.118448184800645
+   op["currentTime"]: 645.4490742394579, machineTime: 642.6496024042169
+   job_id: 32, machine_id: 4, op_id: 1, op.startTime: 645.4490742394579, op.RPT: 46.236994530240956
+   op["currentTime"]: 649.2065763119341, machineTime: 644.2231654505366
+   job_id: 36, machine_id: 3, op_id: 0, op.startTime: 649.2065763119341, op.RPT: 10.460629130277365
+   op["currentTime"]: 651.9506267213486, machineTime: 645.4490742394579
+   job_id: 37, machine_id: 0, op_id: 0, op.startTime: 651.9506267213486, op.RPT: 48.13045660308053
+   op["currentTime"]: 655.5680174045796, machineTime: 655.5680174045796
+   job_id: 34, machine_id: 2, op_id: 0, op.startTime: 655.5680174045796, op.RPT: 10.472523291638458
+   op["currentTime"]: 659.6672054422114, machineTime: 657.7680505890175
+   job_id: 36, machine_id: 1, op_id: 1, op.startTime: 659.6672054422114, op.RPT: 35.51561932492727
+   op["currentTime"]: 666.040540696218, machineTime: 659.6672054422114
+   job_id: 34, machine_id: 3, op_id: 1, op.startTime: 666.040540696218, op.RPT: 29.10982908146183
+   op["currentTime"]: 691.6860687696989, machineTime: 666.040540696218
+   job_id: 35, machine_id: 2, op_id: 0, op.startTime: 691.6860687696989, op.RPT: 10.472523291638458
+   op["currentTime"]: 695.1503697776799, machineTime: 691.6860687696989
+   job_id: 34, machine_id: 4, op_id: 2, op.startTime: 695.1503697776799, op.RPT: 13.796275598978834
+   op["currentTime"]: 700.0810833244292, machineTime: 695.1503697776799
+   job_id: 37, machine_id: 3, op_id: 1, op.startTime: 700.0810833244292, op.RPT: 21.609895527145646
+   op["currentTime"]: 702.1585920613373, machineTime: 695.1828247671386
+   job_id: 35, machine_id: 1, op_id: 1, op.startTime: 702.1585920613373, op.RPT: 32.30110997867021
+   op["currentTime"]: 721.029184945927, machineTime: 700.0810833244292
+   job_id: 38, machine_id: 0, op_id: 0, op.startTime: 721.029184945927, op.RPT: 13.827908476087654
+   op["currentTime"]: 734.4597020400075, machineTime: 702.1585920613373
+   job_id: 35, machine_id: 2, op_id: 2, op.startTime: 734.4597020400075, op.RPT: 45.17182764070423
+   op["currentTime"]: 734.8570934220146, machineTime: 721.6909788515749
+   job_id: 38, machine_id: 3, op_id: 1, op.startTime: 734.8570934220146, op.RPT: 38.98240240203088
+   op["currentTime"]: 751.8892982579171, machineTime: 708.9466453766587
+   job_id: 39, machine_id: 4, op_id: 0, op.startTime: 751.8892982579171, op.RPT: 46.44900370481863
+   op["currentTime"]: 775.5598729355137, machineTime: 734.4597020400075
+   job_id: 40, machine_id: 1, op_id: 0, op.startTime: 775.5598729355137, op.RPT: 27.72156270400872
+   op["currentTime"]: 789.188615725022, machineTime: 734.8570934220146
+   job_id: 41, machine_id: 0, op_id: 0, op.startTime: 789.188615725022, op.RPT: 35.390912113294306
+   op["currentTime"]: 797.1671491500314, machineTime: 773.8394958240455
+   job_id: 42, machine_id: 3, op_id: 0, op.startTime: 797.1671491500314, op.RPT: 16.443198914976147
+   op["currentTime"]: 798.3383019627357, machineTime: 798.3383019627357
+   job_id: 39, machine_id: 4, op_id: 1, op.startTime: 798.3383019627357, op.RPT: 46.236994530240956
+   op["currentTime"]: 803.2814356395224, machineTime: 779.6315296807118
+   job_id: 40, machine_id: 2, op_id: 1, op.startTime: 803.2814356395224, op.RPT: 29.60223770746737
+   op["currentTime"]: 813.6103480650075, machineTime: 813.6103480650075
+   job_id: 42, machine_id: 3, op_id: 1, op.startTime: 813.6103480650075, op.RPT: 21.609895527145646
+   op["currentTime"]: 824.5795278383164, machineTime: 803.2814356395224
+   job_id: 41, machine_id: 1, op_id: 1, op.startTime: 824.5795278383164, op.RPT: 15.118448184800645
+   op["currentTime"]: 832.8836733469898, machineTime: 832.8836733469898
+   job_id: 43, machine_id: 2, op_id: 0, op.startTime: 832.8836733469898, op.RPT: 27.63068807518655
+   op["currentTime"]: 839.7263307831088, machineTime: 824.5795278383164
+   job_id: 44, machine_id: 0, op_id: 0, op.startTime: 839.7263307831088, op.RPT: 35.390912113294306
+   op["currentTime"]: 855.4579351002861, machineTime: 835.2202435921532
+   job_id: 45, machine_id: 3, op_id: 0, op.startTime: 855.4579351002861, op.RPT: 48.535501633613855
+   op["currentTime"]: 860.5143614221763, machineTime: 839.697976023117
+   job_id: 43, machine_id: 1, op_id: 1, op.startTime: 860.5143614221763, op.RPT: 20.0766569867293
+   op["currentTime"]: 875.1172428964031, machineTime: 844.5752964929767
+   job_id: 44, machine_id: 4, op_id: 1, op.startTime: 875.1172428964031, op.RPT: 46.236994530240956
+   op["currentTime"]: 880.5910184089056, machineTime: 860.5143614221763
+   job_id: 46, machine_id: 2, op_id: 0, op.startTime: 880.5910184089056, op.RPT: 10.472523291638458
+   op["currentTime"]: 887.3094359245578, machineTime: 875.1172428964031
+   job_id: 47, machine_id: 0, op_id: 0, op.startTime: 887.3094359245578, op.RPT: 35.390912113294306
+   op["currentTime"]: 891.0635417005441, machineTime: 880.5910184089056
+   job_id: 46, machine_id: 1, op_id: 1, op.startTime: 891.0635417005441, op.RPT: 32.30110997867021
+   op["currentTime"]: 903.9934367339, machineTime: 891.0635417005441
+   job_id: 45, machine_id: 2, op_id: 1, op.startTime: 903.9934367339, op.RPT: 29.60223770746737
+   op["currentTime"]: 918.5855219445472, machineTime: 903.9934367339
+   job_id: 48, machine_id: 3, op_id: 0, op.startTime: 918.5855219445472, op.RPT: 10.460629130277365
+   op["currentTime"]: 921.3542374266441, machineTime: 921.3542374266441
+   job_id: 49, machine_id: 4, op_id: 0, op.startTime: 921.3542374266441, op.RPT: 46.44900370481863
+   op["currentTime"]: 923.3646516792143, machineTime: 923.3646516792143
+   job_id: 47, machine_id: 1, op_id: 1, op.startTime: 923.3646516792143, op.RPT: 15.118448184800645
+   op["currentTime"]: 929.0461510748245, machineTime: 929.0461510748245
+   job_id: 48, machine_id: 3, op_id: 1, op.startTime: 929.0461510748245, op.RPT: 38.98240240203088
+   op["currentTime"]: 933.5956744413674, machineTime: 933.5956744413674
+   job_id: 46, machine_id: 2, op_id: 2, op.startTime: 933.5956744413674, op.RPT: 45.17182764070423
+   op["currentTime"]: 967.8032411314628, machineTime: 938.4830998640149
+   job_id: 49, machine_id: 1, op_id: 1, op.startTime: 967.8032411314628, op.RPT: 15.118448184800645
+   tardiness 1: 206.8992967223115
+
+job_id: 0, machine_id: 1, op_id: 0, op.startTime: 0, op.RPT: 35.14449407101389
+job_id: 1, machine_id: 0, op_id: 0, op.startTime: 0, op.RPT: 13.827908476087654
+job_id: 2, machine_id: 3, op_id: 0, op.startTime: 0, op.RPT: 10.460629130277365
+job_id: 9, machine_id: 2, op_id: 0, op.startTime: 0, op.RPT: 27.63068807518655
+job_id: 3, machine_id: 4, op_id: 0, op.startTime: 0, op.RPT: 46.44900370481863
+job_id: 2, machine_id: 3, op_id: 1, op.startTime: 10.460629130277365, op.RPT: 38.98240240203088
+job_id: 4, machine_id: 0, op_id: 0, op.startTime: 13.827908476087654, op.RPT: 35.390912113294306
+job_id: 9, machine_id: 2, op_id: 1, op.startTime: 27.63068807518655, op.RPT: 29.60223770746737
+job_id: 0, machine_id: 1, op_id: 1, op.startTime: 35.14449407101389, op.RPT: 35.51561932492727
+job_id: 3, machine_id: 4, op_id: 1, op.startTime: 46.44900370481863, op.RPT: 46.236994530240956
+job_id: 10, machine_id: 0, op_id: 0, op.startTime: 49.21882058938196, op.RPT: 48.13045660308053
+job_id: 1, machine_id: 3, op_id: 1, op.startTime: 49.44303153230824, op.RPT: 38.98240240203088
+job_id: 5, machine_id: 2, op_id: 0, op.startTime: 57.23292578265392, op.RPT: 10.472523291638458
+job_id: 5, machine_id: 2, op_id: 1, op.startTime: 67.70544907429237, op.RPT: 39.86883144173152
+job_id: 4, machine_id: 1, op_id: 1, op.startTime: 70.66011339594115, op.RPT: 15.118448184800645
+job_id: 11, machine_id: 1, op_id: 0, op.startTime: 85.7785615807418, op.RPT: 35.14449407101389
+job_id: 10, machine_id: 3, op_id: 1, op.startTime: 97.3492771924625, op.RPT: 21.609895527145646
+job_id: 5, machine_id: 4, op_id: 2, op.startTime: 107.57428051602389, op.RPT: 13.796275598978834
+job_id: 6, machine_id: 0, op_id: 0, op.startTime: 118.95917271960815, op.RPT: 43.65459180283236
+job_id: 11, machine_id: 3, op_id: 1, op.startTime: 120.92305565175567, op.RPT: 38.98240240203088
+job_id: 7, machine_id: 2, op_id: 0, op.startTime: 121.37055611500273, op.RPT: 10.472523291638458
+job_id: 7, machine_id: 1, op_id: 1, op.startTime: 131.84307940664118, op.RPT: 32.30110997867021
+job_id: 8, machine_id: 2, op_id: 0, op.startTime: 159.90545805378656, op.RPT: 10.472523291638458
+job_id: 6, machine_id: 4, op_id: 1, op.startTime: 162.6137645224405, op.RPT: 24.78686745292636
+job_id: 7, machine_id: 1, op_id: 2, op.startTime: 164.1441893853114, op.RPT: 10.552359434918204
+job_id: 8, machine_id: 3, op_id: 1, op.startTime: 170.377981345425, op.RPT: 29.10982908146183
+job_id: 12, machine_id: 0, op_id: 0, op.startTime: 178.19691185389433, op.RPT: 43.65459180283236
+job_id: 6, machine_id: 2, op_id: 2, op.startTime: 187.40063197536688, op.RPT: 45.17182764070423
+job_id: 13, machine_id: 1, op_id: 0, op.startTime: 189.95378737403172, op.RPT: 35.14449407101389
+job_id: 15, machine_id: 3, op_id: 0, op.startTime: 199.48781042688685, op.RPT: 10.460629130277365
+job_id: 15, machine_id: 3, op_id: 1, op.startTime: 209.94843955716422, op.RPT: 38.98240240203088
+job_id: 8, machine_id: 4, op_id: 2, op.startTime: 221.8515036567267, op.RPT: 13.796275598978834
+job_id: 13, machine_id: 1, op_id: 1, op.startTime: 225.09828144504561, op.RPT: 35.51561932492727
+job_id: 14, machine_id: 2, op_id: 0, op.startTime: 232.57245961607111, op.RPT: 27.63068807518655
+job_id: 12, machine_id: 4, op_id: 1, op.startTime: 235.64777925570553, op.RPT: 24.78686745292636
+job_id: 16, machine_id: 3, op_id: 0, op.startTime: 249.85199096311726, op.RPT: 48.535501633613855
+job_id: 14, machine_id: 2, op_id: 1, op.startTime: 260.20314769125764, op.RPT: 29.60223770746737
+job_id: 12, machine_id: 4, op_id: 2, op.startTime: 260.4346467086319, op.RPT: 13.796275598978834
+job_id: 17, machine_id: 0, op_id: 0, op.startTime: 274.96839658253424, op.RPT: 43.65459180283236
+job_id: 16, machine_id: 1, op_id: 1, op.startTime: 298.38749259673114, op.RPT: 20.0766569867293
+job_id: 18, machine_id: 2, op_id: 0, op.startTime: 306.5429647507543, op.RPT: 27.63068807518655
+job_id: 17, machine_id: 4, op_id: 1, op.startTime: 318.6229883853666, op.RPT: 24.78686745292636
+job_id: 18, machine_id: 1, op_id: 1, op.startTime: 334.17365282594085, op.RPT: 20.0766569867293
+job_id: 17, machine_id: 2, op_id: 2, op.startTime: 343.40985583829297, op.RPT: 45.17182764070423
+job_id: 19, machine_id: 3, op_id: 0, op.startTime: 361.27697875883695, op.RPT: 10.460629130277365
+job_id: 20, machine_id: 1, op_id: 0, op.startTime: 370.12115619417784, op.RPT: 27.72156270400872
+job_id: 19, machine_id: 3, op_id: 1, op.startTime: 371.7376078891143, op.RPT: 38.98240240203088
+job_id: 20, machine_id: 2, op_id: 1, op.startTime: 397.84271889818655, op.RPT: 29.60223770746737
+job_id: 21, machine_id: 1, op_id: 0, op.startTime: 428.52270768000164, op.RPT: 27.72156270400872
+job_id: 22, machine_id: 3, op_id: 0, op.startTime: 433.8573024556078, op.RPT: 48.535501633613855
+job_id: 21, machine_id: 2, op_id: 1, op.startTime: 456.24427038401035, op.RPT: 29.60223770746737
+job_id: 23, machine_id: 0, op_id: 0, op.startTime: 470.9526446300558, op.RPT: 48.13045660308053
+job_id: 22, machine_id: 1, op_id: 1, op.startTime: 482.39280408922167, op.RPT: 20.0766569867293
+job_id: 24, machine_id: 3, op_id: 0, op.startTime: 493.8477629866475, op.RPT: 10.460629130277365
+job_id: 25, machine_id: 4, op_id: 0, op.startTime: 503.5146004643386, op.RPT: 46.44900370481863
+job_id: 24, machine_id: 1, op_id: 1, op.startTime: 504.3083921169249, op.RPT: 35.51561932492727
+job_id: 26, machine_id: 3, op_id: 0, op.startTime: 517.7446370740757, op.RPT: 16.443198914976147
+job_id: 27, machine_id: 0, op_id: 0, op.startTime: 519.0831012331363, op.RPT: 13.827908476087654
+job_id: 23, machine_id: 0, op_id: 1, op.startTime: 532.9110097092239, op.RPT: 41.756240303645356
+job_id: 27, machine_id: 3, op_id: 1, op.startTime: 534.1878359890519, op.RPT: 38.98240240203088
+job_id: 29, machine_id: 1, op_id: 0, op.startTime: 546.0483173645424, op.RPT: 35.14449407101389
+job_id: 25, machine_id: 4, op_id: 1, op.startTime: 549.9636041691573, op.RPT: 46.236994530240956
+job_id: 26, machine_id: 3, op_id: 1, op.startTime: 573.1702383910828, op.RPT: 21.609895527145646
+job_id: 28, machine_id: 0, op_id: 0, op.startTime: 574.6672500128692, op.RPT: 35.390912113294306
+job_id: 29, machine_id: 1, op_id: 1, op.startTime: 581.1928114355563, op.RPT: 35.51561932492727
+job_id: 31, machine_id: 3, op_id: 0, op.startTime: 594.7801339182284, op.RPT: 10.460629130277365
+job_id: 30, machine_id: 4, op_id: 0, op.startTime: 596.2005986993983, op.RPT: 46.44900370481863
+job_id: 33, machine_id: 2, op_id: 0, op.startTime: 598.3350916219257, op.RPT: 27.63068807518655
+job_id: 31, machine_id: 3, op_id: 1, op.startTime: 605.2407630485058, op.RPT: 38.98240240203088
+job_id: 32, machine_id: 0, op_id: 0, op.startTime: 610.0581621261636, op.RPT: 35.390912113294306
+job_id: 28, machine_id: 1, op_id: 1, op.startTime: 616.7084307604836, op.RPT: 15.118448184800645
+job_id: 33, machine_id: 2, op_id: 1, op.startTime: 625.9657796971122, op.RPT: 29.60223770746737
+job_id: 30, machine_id: 1, op_id: 1, op.startTime: 642.6496024042169, op.RPT: 15.118448184800645
+job_id: 32, machine_id: 4, op_id: 1, op.startTime: 645.4490742394579, op.RPT: 46.236994530240956
+job_id: 36, machine_id: 3, op_id: 0, op.startTime: 649.2065763119341, op.RPT: 10.460629130277365
+job_id: 37, machine_id: 0, op_id: 0, op.startTime: 651.9506267213486, op.RPT: 48.13045660308053
+job_id: 34, machine_id: 2, op_id: 0, op.startTime: 655.5680174045796, op.RPT: 10.472523291638458
+job_id: 36, machine_id: 1, op_id: 1, op.startTime: 659.6672054422114, op.RPT: 35.51561932492727
+job_id: 34, machine_id: 3, op_id: 1, op.startTime: 666.040540696218, op.RPT: 29.10982908146183
+job_id: 35, machine_id: 2, op_id: 0, op.startTime: 691.6860687696989, op.RPT: 10.472523291638458
+job_id: 34, machine_id: 4, op_id: 2, op.startTime: 695.1503697776799, op.RPT: 13.796275598978834
+job_id: 37, machine_id: 3, op_id: 1, op.startTime: 700.0810833244292, op.RPT: 21.609895527145646
+job_id: 35, machine_id: 1, op_id: 1, op.startTime: 702.1585920613373, op.RPT: 32.30110997867021
+job_id: 38, machine_id: 0, op_id: 0, op.startTime: 721.029184945927, op.RPT: 13.827908476087654
+job_id: 35, machine_id: 2, op_id: 2, op.startTime: 734.4597020400075, op.RPT: 45.17182764070423
+job_id: 38, machine_id: 3, op_id: 1, op.startTime: 734.8570934220146, op.RPT: 38.98240240203088
+job_id: 39, machine_id: 4, op_id: 0, op.startTime: 751.8892982579171, op.RPT: 46.44900370481863
+job_id: 40, machine_id: 1, op_id: 0, op.startTime: 775.5598729355137, op.RPT: 27.72156270400872
+job_id: 41, machine_id: 0, op_id: 0, op.startTime: 789.188615725022, op.RPT: 35.390912113294306
+job_id: 42, machine_id: 3, op_id: 0, op.startTime: 797.1671491500314, op.RPT: 16.443198914976147
+job_id: 39, machine_id: 4, op_id: 1, op.startTime: 798.3383019627357, op.RPT: 46.236994530240956
+job_id: 40, machine_id: 2, op_id: 1, op.startTime: 803.2814356395224, op.RPT: 29.60223770746737
+job_id: 42, machine_id: 3, op_id: 1, op.startTime: 813.6103480650075, op.RPT: 21.609895527145646
+job_id: 41, machine_id: 1, op_id: 1, op.startTime: 824.5795278383164, op.RPT: 15.118448184800645
+job_id: 43, machine_id: 2, op_id: 0, op.startTime: 832.8836733469898, op.RPT: 27.63068807518655
+job_id: 44, machine_id: 0, op_id: 0, op.startTime: 839.7263307831088, op.RPT: 35.390912113294306
+job_id: 45, machine_id: 3, op_id: 0, op.startTime: 855.4579351002861, op.RPT: 48.535501633613855
+job_id: 43, machine_id: 1, op_id: 1, op.startTime: 860.5143614221763, op.RPT: 20.0766569867293
+job_id: 44, machine_id: 4, op_id: 1, op.startTime: 875.1172428964031, op.RPT: 46.236994530240956
+job_id: 46, machine_id: 2, op_id: 0, op.startTime: 880.5910184089056, op.RPT: 10.472523291638458
+job_id: 47, machine_id: 0, op_id: 0, op.startTime: 887.3094359245578, op.RPT: 35.390912113294306
+job_id: 46, machine_id: 1, op_id: 1, op.startTime: 891.0635417005441, op.RPT: 32.30110997867021
+job_id: 45, machine_id: 2, op_id: 1, op.startTime: 903.9934367339, op.RPT: 29.60223770746737
+job_id: 48, machine_id: 3, op_id: 0, op.startTime: 918.5855219445472, op.RPT: 10.460629130277365
+job_id: 49, machine_id: 4, op_id: 0, op.startTime: 921.3542374266441, op.RPT: 46.44900370481863
+job_id: 47, machine_id: 1, op_id: 1, op.startTime: 923.3646516792143, op.RPT: 15.118448184800645
+job_id: 48, machine_id: 3, op_id: 1, op.startTime: 929.0461510748245, op.RPT: 38.98240240203088
+job_id: 46, machine_id: 2, op_id: 2, op.startTime: 933.5956744413674, op.RPT: 45.17182764070423
+job_id: 49, machine_id: 1, op_id: 1, op.startTime: 967.8032411314628, op.RPT: 15.118448184800645
+
+reschedule
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 0, machine_id: 1, op_id: 0, op.startTime: 0, op.RPT: 35.14449407101389
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 1, machine_id: 0, op_id: 0, op.startTime: 0, op.RPT: 13.827908476087654
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 2, machine_id: 3, op_id: 0, op.startTime: 0, op.RPT: 10.460629130277365
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 9, machine_id: 2, op_id: 0, op.startTime: 0, op.RPT: 27.63068807518655
+   op["currentTime"]: 0, machineTime: 0
+   job_id: 3, machine_id: 4, op_id: 0, op.startTime: 0, op.RPT: 46.44900370481863
+   op["currentTime"]: 0, machineTime: 10.460629130277365
+   job_id: 2, machine_id: 3, op_id: 1, op.startTime: 10.460629130277365, op.RPT: 38.98240240203088
+   op["currentTime"]: 0, machineTime: 13.827908476087654
+   job_id: 4, machine_id: 0, op_id: 0, op.startTime: 13.827908476087654, op.RPT: 35.390912113294306
+   op["currentTime"]: 0, machineTime: 27.63068807518655
+   job_id: 9, machine_id: 2, op_id: 1, op.startTime: 27.63068807518655, op.RPT: 29.60223770746737
+   op["currentTime"]: 0, machineTime: 35.14449407101389
+   job_id: 0, machine_id: 1, op_id: 1, op.startTime: 35.14449407101389, op.RPT: 35.51561932492727
+   op["currentTime"]: 0, machineTime: 46.44900370481863
+   job_id: 3, machine_id: 4, op_id: 1, op.startTime: 46.44900370481863, op.RPT: 46.236994530240956
+   op["currentTime"]: 0, machineTime: 49.21882058938196
+   job_id: 10, machine_id: 0, op_id: 0, op.startTime: 49.21882058938196, op.RPT: 48.13045660308053
+   op["currentTime"]: 10.460629130277365, machineTime: 49.44303153230824
+   job_id: 1, machine_id: 3, op_id: 1, op.startTime: 49.44303153230824, op.RPT: 38.98240240203088
+   op["currentTime"]: 13.827908476087654, machineTime: 57.23292578265392
+   job_id: 5, machine_id: 2, op_id: 0, op.startTime: 57.23292578265392, op.RPT: 10.472523291638458
+   op["currentTime"]: 27.63068807518655, machineTime: 67.70544907429237
+   job_id: 5, machine_id: 2, op_id: 1, op.startTime: 67.70544907429237, op.RPT: 39.86883144173152
+   op["currentTime"]: 35.14449407101389, machineTime: 70.66011339594115
+   job_id: 4, machine_id: 1, op_id: 1, op.startTime: 70.66011339594115, op.RPT: 15.118448184800645
+   op["currentTime"]: 38.66924432674587, machineTime: 85.7785615807418
+   job_id: 11, machine_id: 1, op_id: 0, op.startTime: 85.7785615807418, op.RPT: 35.14449407101389
+   op["currentTime"]: 46.44900370481863, machineTime: 88.42543393433911
+   job_id: 10, machine_id: 3, op_id: 1, op.startTime: 88.42543393433911, op.RPT: 21.609895527145646
+   op["currentTime"]: 49.21882058938196, machineTime: 92.68599823505959
+   job_id: 5, machine_id: 4, op_id: 2, op.startTime: 92.68599823505959, op.RPT: 13.796275598978834
+   op["currentTime"]: 49.44303153230824, machineTime: 97.3492771924625
+   job_id: 6, machine_id: 0, op_id: 0, op.startTime: 97.3492771924625, op.RPT: 43.65459180283236
+   op["currentTime"]: 57.23292578265392, machineTime: 110.03532946148476
+   job_id: 11, machine_id: 3, op_id: 1, op.startTime: 110.03532946148476, op.RPT: 38.98240240203088
+   op["currentTime"]: 67.70544907429237, machineTime: 107.57428051602389
+   job_id: 7, machine_id: 2, op_id: 0, op.startTime: 107.57428051602389, op.RPT: 10.472523291638458
+   op["currentTime"]: 70.66011339594115, machineTime: 120.92305565175567
+   job_id: 7, machine_id: 1, op_id: 1, op.startTime: 120.92305565175567, op.RPT: 32.30110997867021
+   op["currentTime"]: 76.44019879505264, machineTime: 118.04680380766234
+   job_id: 8, machine_id: 2, op_id: 0, op.startTime: 118.04680380766234, op.RPT: 10.472523291638458
+   op["currentTime"]: 85.7785615807418, machineTime: 106.48227383403842
+   job_id: 6, machine_id: 4, op_id: 1, op.startTime: 106.48227383403842, op.RPT: 24.78686745292636
+   op["currentTime"]: 88.42543393433911, machineTime: 153.2241656304259
+   job_id: 7, machine_id: 1, op_id: 2, op.startTime: 153.2241656304259, op.RPT: 10.552359434918204
+   op["currentTime"]: 92.68599823505959, machineTime: 149.01773186351565
+   job_id: 8, machine_id: 3, op_id: 1, op.startTime: 149.01773186351565, op.RPT: 29.10982908146183
+   op["currentTime"]: 97.3492771924625, machineTime: 141.00386899529485
+   job_id: 12, machine_id: 0, op_id: 0, op.startTime: 141.00386899529485, op.RPT: 43.65459180283236
+   op["currentTime"]: 106.48227383403842, machineTime: 128.5193270993008
+   job_id: 6, machine_id: 2, op_id: 2, op.startTime: 128.5193270993008, op.RPT: 45.17182764070423
+   op["currentTime"]: 107.57428051602389, machineTime: 163.7765250653441
+   job_id: 13, machine_id: 1, op_id: 0, op.startTime: 163.7765250653441, op.RPT: 35.14449407101389
+   op["currentTime"]: 110.03532946148476, machineTime: 178.1275609449775
+   job_id: 15, machine_id: 3, op_id: 0, op.startTime: 178.1275609449775, op.RPT: 10.460629130277365
+   op["currentTime"]: 118.04680380766234, machineTime: 188.58819007525486
+   job_id: 15, machine_id: 3, op_id: 1, op.startTime: 188.58819007525486, op.RPT: 38.98240240203088
+   op["currentTime"]: 120.92305565175567, machineTime: 131.26914128696478
+   job_id: 8, machine_id: 4, op_id: 2, op.startTime: 131.26914128696478, op.RPT: 13.796275598978834
+   op["currentTime"]: 128.5193270993008, machineTime: 198.92101913635798
+   job_id: 13, machine_id: 1, op_id: 1, op.startTime: 198.92101913635798, op.RPT: 35.51561932492727
+   op["currentTime"]: 131.26914128696478, machineTime: 173.69115474000503
+   job_id: 14, machine_id: 2, op_id: 0, op.startTime: 173.69115474000503, op.RPT: 27.63068807518655
+   op["currentTime"]: 141.00386899529485, machineTime: 145.06541688594362
+   job_id: 12, machine_id: 4, op_id: 1, op.startTime: 145.06541688594362, op.RPT: 24.78686745292636
+   op["currentTime"]: 145.06541688594362, machineTime: 227.57059247728574
+   job_id: 16, machine_id: 3, op_id: 0, op.startTime: 227.57059247728574, op.RPT: 48.535501633613855
+   op["currentTime"]: 149.01773186351565, machineTime: 201.3218428151916
+   job_id: 14, machine_id: 2, op_id: 1, op.startTime: 201.3218428151916, op.RPT: 29.60223770746737
+   op["currentTime"]: 153.2241656304259, machineTime: 169.85228433887
+   job_id: 12, machine_id: 4, op_id: 2, op.startTime: 169.85228433887, op.RPT: 13.796275598978834
+   op["currentTime"]: 163.7765250653441, machineTime: 184.6584607981272
+   job_id: 17, machine_id: 0, op_id: 0, op.startTime: 184.6584607981272, op.RPT: 43.65459180283236
+   op["currentTime"]: 169.85228433887, machineTime: 234.43663846128527
+   job_id: 16, machine_id: 1, op_id: 1, op.startTime: 234.43663846128527, op.RPT: 20.0766569867293
+   op["currentTime"]: 173.69115474000503, machineTime: 230.92408052265895
+   job_id: 18, machine_id: 2, op_id: 0, op.startTime: 230.92408052265895, op.RPT: 27.63068807518655
+   op["currentTime"]: 178.1275609449775, machineTime: 183.64855993784883
+   job_id: 17, machine_id: 4, op_id: 1, op.startTime: 183.64855993784883, op.RPT: 24.78686745292636
+   op["currentTime"]: 178.19691185389433, machineTime: 254.51329544801456
+   job_id: 18, machine_id: 1, op_id: 1, op.startTime: 254.51329544801456, op.RPT: 20.0766569867293
+   op["currentTime"]: 183.64855993784883, machineTime: 258.5547685978455
+   job_id: 17, machine_id: 2, op_id: 2, op.startTime: 258.5547685978455, op.RPT: 45.17182764070423
+   op["currentTime"]: 184.6584607981272, machineTime: 276.1060941108996
+   job_id: 19, machine_id: 3, op_id: 0, op.startTime: 276.1060941108996, op.RPT: 10.460629130277365
+   op["currentTime"]: 188.58819007525486, machineTime: 274.58995243474385
+   job_id: 20, machine_id: 1, op_id: 0, op.startTime: 274.58995243474385, op.RPT: 27.72156270400872
+   op["currentTime"]: 189.95378737403172, machineTime: 286.566723241177
+   job_id: 19, machine_id: 3, op_id: 1, op.startTime: 286.566723241177, op.RPT: 38.98240240203088
+   op["currentTime"]: 193.3536588037225, machineTime: 303.72659623854975
+   job_id: 20, machine_id: 2, op_id: 1, op.startTime: 303.72659623854975, op.RPT: 29.60223770746737
+   op["currentTime"]: 197.56081225597032, machineTime: 302.31151513875255
+   job_id: 21, machine_id: 1, op_id: 0, op.startTime: 302.31151513875255, op.RPT: 27.72156270400872
+   op["currentTime"]: 198.92101913635798, machineTime: 325.54912564320784
+   job_id: 22, machine_id: 3, op_id: 0, op.startTime: 325.54912564320784, op.RPT: 48.535501633613855
+   op["currentTime"]: 201.3218428151916, machineTime: 333.32883394601714
+   job_id: 21, machine_id: 2, op_id: 1, op.startTime: 333.32883394601714, op.RPT: 29.60223770746737
+   op["currentTime"]: 208.4354273907752, machineTime: 228.31305260095957
+   job_id: 23, machine_id: 0, op_id: 0, op.startTime: 228.31305260095957, op.RPT: 48.13045660308053
+   op["currentTime"]: 227.57059247728574, machineTime: 330.03307784276126
+   job_id: 22, machine_id: 1, op_id: 1, op.startTime: 330.03307784276126, op.RPT: 20.0766569867293
+   op["currentTime"]: 228.31305260095957, machineTime: 374.0846272768217
+   job_id: 24, machine_id: 3, op_id: 0, op.startTime: 374.0846272768217, op.RPT: 10.460629130277365
+   op["currentTime"]: 230.92408052265895, machineTime: 208.4354273907752
+   job_id: 25, machine_id: 4, op_id: 0, op.startTime: 230.92408052265895, op.RPT: 46.44900370481863
+   op["currentTime"]: 234.43663846128527, machineTime: 350.10973482949055
+   job_id: 24, machine_id: 1, op_id: 1, op.startTime: 350.10973482949055, op.RPT: 35.51561932492727
+   op["currentTime"]: 249.85199096311726, machineTime: 384.5452564070991
+   job_id: 26, machine_id: 3, op_id: 0, op.startTime: 384.5452564070991, op.RPT: 16.443198914976147
+   op["currentTime"]: 254.51329544801456, machineTime: 276.4435092040401
+   job_id: 27, machine_id: 0, op_id: 0, op.startTime: 276.4435092040401, op.RPT: 13.827908476087654
+   op["currentTime"]: 258.5547685978455, machineTime: 290.27141768012774
+   job_id: 23, machine_id: 0, op_id: 1, op.startTime: 290.27141768012774, op.RPT: 41.756240303645356
+   op["currentTime"]: 274.58995243474385, machineTime: 400.98845532207525
+   job_id: 27, machine_id: 3, op_id: 1, op.startTime: 400.98845532207525, op.RPT: 38.98240240203088
+   op["currentTime"]: 274.96839658253424, machineTime: 385.62535415441783
+   job_id: 29, machine_id: 1, op_id: 0, op.startTime: 385.62535415441783, op.RPT: 35.14449407101389
+   op["currentTime"]: 276.1060941108996, machineTime: 277.3730842274776
+   job_id: 25, machine_id: 4, op_id: 1, op.startTime: 277.3730842274776, op.RPT: 46.236994530240956
+   op["currentTime"]: 276.4435092040401, machineTime: 439.9708577241061
+   job_id: 26, machine_id: 3, op_id: 1, op.startTime: 439.9708577241061, op.RPT: 21.609895527145646
+   op["currentTime"]: 277.3730842274776, machineTime: 332.0276579837731
+   job_id: 28, machine_id: 0, op_id: 0, op.startTime: 332.0276579837731, op.RPT: 35.390912113294306
+   op["currentTime"]: 286.566723241177, machineTime: 420.7698482254317
+   job_id: 29, machine_id: 1, op_id: 1, op.startTime: 420.7698482254317, op.RPT: 35.51561932492727
+   op["currentTime"]: 290.27141768012774, machineTime: 461.58075325125174
+   job_id: 31, machine_id: 3, op_id: 0, op.startTime: 461.58075325125174, op.RPT: 10.460629130277365
+   op["currentTime"]: 302.31151513875255, machineTime: 323.61007875771855
+   job_id: 30, machine_id: 4, op_id: 0, op.startTime: 323.61007875771855, op.RPT: 46.44900370481863
+   op["currentTime"]: 303.72659623854975, machineTime: 362.93107165348454
+   job_id: 33, machine_id: 2, op_id: 0, op.startTime: 362.93107165348454, op.RPT: 27.63068807518655
+   op["currentTime"]: 306.5429647507543, machineTime: 472.0413823815291
+   job_id: 31, machine_id: 3, op_id: 1, op.startTime: 472.0413823815291, op.RPT: 38.98240240203088
+   op["currentTime"]: 323.61007875771855, machineTime: 367.4185700970674
+   job_id: 32, machine_id: 0, op_id: 0, op.startTime: 367.4185700970674, op.RPT: 35.390912113294306
+   op["currentTime"]: 325.54912564320784, machineTime: 456.285467550359
+   job_id: 28, machine_id: 1, op_id: 1, op.startTime: 456.285467550359, op.RPT: 15.118448184800645
+   op["currentTime"]: 330.03307784276126, machineTime: 390.56175972867106
+   job_id: 33, machine_id: 2, op_id: 1, op.startTime: 390.56175972867106, op.RPT: 29.60223770746737
+   op["currentTime"]: 332.0276579837731, machineTime: 471.4039157351596
+   job_id: 30, machine_id: 1, op_id: 1, op.startTime: 471.4039157351596, op.RPT: 15.118448184800645
+   op["currentTime"]: 333.32883394601714, machineTime: 370.05908246253716
+   job_id: 32, machine_id: 4, op_id: 1, op.startTime: 370.05908246253716, op.RPT: 46.236994530240956
+   op["currentTime"]: 350.10973482949055, machineTime: 511.02378478355996
+   job_id: 36, machine_id: 3, op_id: 0, op.startTime: 511.02378478355996, op.RPT: 10.460629130277365
+   op["currentTime"]: 361.27697875883695, machineTime: 402.8094822103617
+   job_id: 37, machine_id: 0, op_id: 0, op.startTime: 402.8094822103617, op.RPT: 48.13045660308053
+   op["currentTime"]: 362.93107165348454, machineTime: 420.16399743613846
+   job_id: 34, machine_id: 2, op_id: 0, op.startTime: 420.16399743613846, op.RPT: 10.472523291638458
+   op["currentTime"]: 367.4185700970674, machineTime: 486.52236391996024
+   job_id: 36, machine_id: 1, op_id: 1, op.startTime: 486.52236391996024, op.RPT: 35.51561932492727
+   op["currentTime"]: 370.05908246253716, machineTime: 521.4844139138373
+   job_id: 34, machine_id: 3, op_id: 1, op.startTime: 521.4844139138373, op.RPT: 29.10982908146183
+   op["currentTime"]: 370.12115619417784, machineTime: 430.63652072777694
+   job_id: 35, machine_id: 2, op_id: 0, op.startTime: 430.63652072777694, op.RPT: 10.472523291638458
+   op["currentTime"]: 374.0846272768217, machineTime: 416.2960769927781
+   job_id: 34, machine_id: 4, op_id: 2, op.startTime: 416.2960769927781, op.RPT: 13.796275598978834
+   op["currentTime"]: 384.5452564070991, machineTime: 550.5942429952992
+   job_id: 37, machine_id: 3, op_id: 1, op.startTime: 550.5942429952992, op.RPT: 21.609895527145646
+   op["currentTime"]: 385.62535415441783, machineTime: 522.0379832448875
+   job_id: 35, machine_id: 1, op_id: 1, op.startTime: 522.0379832448875, op.RPT: 32.30110997867021
+   op["currentTime"]: 390.56175972867106, machineTime: 450.9399388134422
+   job_id: 38, machine_id: 0, op_id: 0, op.startTime: 450.9399388134422, op.RPT: 13.827908476087654
+   op["currentTime"]: 400.98845532207525, machineTime: 441.1090440194154
+   job_id: 35, machine_id: 2, op_id: 2, op.startTime: 441.1090440194154, op.RPT: 45.17182764070423
+   op["currentTime"]: 402.8094822103617, machineTime: 572.2041385224449
+   job_id: 38, machine_id: 3, op_id: 1, op.startTime: 572.2041385224449, op.RPT: 38.98240240203088
+   op["currentTime"]: 416.2960769927781, machineTime: 430.09235259175693
+   job_id: 39, machine_id: 4, op_id: 0, op.startTime: 430.09235259175693, op.RPT: 46.44900370481863
+   op["currentTime"]: 420.16399743613846, machineTime: 554.3390932235577
+   job_id: 40, machine_id: 1, op_id: 0, op.startTime: 554.3390932235577, op.RPT: 27.72156270400872
+   op["currentTime"]: 420.7698482254317, machineTime: 464.76784728952987
+   job_id: 41, machine_id: 0, op_id: 0, op.startTime: 464.76784728952987, op.RPT: 35.390912113294306
+   op["currentTime"]: 428.52270768000164, machineTime: 611.1865409244757
+   job_id: 42, machine_id: 3, op_id: 0, op.startTime: 611.1865409244757, op.RPT: 16.443198914976147
+   op["currentTime"]: 430.09235259175693, machineTime: 476.54135629657554
+   job_id: 39, machine_id: 4, op_id: 1, op.startTime: 476.54135629657554, op.RPT: 46.236994530240956
+   op["currentTime"]: 430.63652072777694, machineTime: 486.28087166011966
+   job_id: 40, machine_id: 2, op_id: 1, op.startTime: 486.28087166011966, op.RPT: 29.60223770746737
+   op["currentTime"]: 433.8573024556078, machineTime: 627.6297398394519
+   job_id: 42, machine_id: 3, op_id: 1, op.startTime: 627.6297398394519, op.RPT: 21.609895527145646
+   op["currentTime"]: 439.9708577241061, machineTime: 582.0606559275665
+   job_id: 41, machine_id: 1, op_id: 1, op.startTime: 582.0606559275665, op.RPT: 15.118448184800645
+   op["currentTime"]: 441.1090440194154, machineTime: 515.883109367587
+   job_id: 43, machine_id: 2, op_id: 0, op.startTime: 515.883109367587, op.RPT: 27.63068807518655
+   op["currentTime"]: 450.9399388134422, machineTime: 500.15875940282416
+   job_id: 44, machine_id: 0, op_id: 0, op.startTime: 500.15875940282416, op.RPT: 35.390912113294306
+   op["currentTime"]: 456.285467550359, machineTime: 649.2396353665976
+   job_id: 45, machine_id: 3, op_id: 0, op.startTime: 649.2396353665976, op.RPT: 48.535501633613855
+   op["currentTime"]: 461.58075325125174, machineTime: 597.1791041123671
+   job_id: 43, machine_id: 1, op_id: 1, op.startTime: 597.1791041123671, op.RPT: 20.0766569867293
+   op["currentTime"]: 464.76784728952987, machineTime: 522.7783508268164
+   job_id: 44, machine_id: 4, op_id: 1, op.startTime: 522.7783508268164, op.RPT: 46.236994530240956
+   op["currentTime"]: 470.9526446300558, machineTime: 543.5137974427736
+   job_id: 46, machine_id: 2, op_id: 0, op.startTime: 543.5137974427736, op.RPT: 10.472523291638458
+   op["currentTime"]: 471.4039157351596, machineTime: 535.5496715161185
+   job_id: 47, machine_id: 0, op_id: 0, op.startTime: 535.5496715161185, op.RPT: 35.390912113294306
+   op["currentTime"]: 472.0413823815291, machineTime: 617.2557610990964
+   job_id: 46, machine_id: 1, op_id: 1, op.startTime: 617.2557610990964, op.RPT: 32.30110997867021
+   op["currentTime"]: 476.54135629657554, machineTime: 553.9863207344121
+   job_id: 45, machine_id: 2, op_id: 1, op.startTime: 553.9863207344121, op.RPT: 29.60223770746737
+   op["currentTime"]: 486.28087166011966, machineTime: 697.7751370002114
+   job_id: 48, machine_id: 3, op_id: 0, op.startTime: 697.7751370002114, op.RPT: 10.460629130277365
+   op["currentTime"]: 486.52236391996024, machineTime: 569.0153453570574
+   job_id: 49, machine_id: 4, op_id: 0, op.startTime: 569.0153453570574, op.RPT: 46.44900370481863
+   op["currentTime"]: 493.8477629866475, machineTime: 649.5568710777666
+   job_id: 47, machine_id: 1, op_id: 1, op.startTime: 649.5568710777666, op.RPT: 15.118448184800645
+   op["currentTime"]: 500.15875940282416, machineTime: 708.2357661304887
+   job_id: 48, machine_id: 3, op_id: 1, op.startTime: 708.2357661304887, op.RPT: 38.98240240203088
+   op["currentTime"]: 503.5146004643386, machineTime: 583.5885584418794
+   job_id: 46, machine_id: 2, op_id: 2, op.startTime: 583.5885584418794, op.RPT: 45.17182764070423
+   op["currentTime"]: 511.02378478355996, machineTime: 664.6753192625672
+   job_id: 49, machine_id: 1, op_id: 1, op.startTime: 664.6753192625672, op.RPT: 15.118448184800645
+   env.DJSP_Instance.All_finished(): True
+   [Error]  OP(5, 2) assigned before previous op done
+   tardiness 2: 34.59190467013153

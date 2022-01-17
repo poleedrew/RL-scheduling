@@ -1,0 +1,31 @@
+{
+    "DDT":                  1.5,
+    "DDT_dt":               0.8,
+    "MachineNum":           5,
+    "InitialJobNum":        10,
+    "InsertedJobNum":       40,
+    "JobTypeNum":           5,
+    "MaxOpNum":             5,
+    "MaxProcessTime":       50,
+    "RPT_effect":           {
+        "flag": true,
+        "type": "Rework",
+        "rework_probability": 0.1,
+        "rework_percentage": 0.2
+    },
+    "Mean_of_Arrival":      50,
+    "TrainingStep":         100000,
+    "LR":                   0.001,
+    "JobTypeFile":          "/mnt/nfs/work/oo12374/JSP/DJSP_RL-Env/test_instance/Case4/basic.json",
+    "Renew_arrival":        false,
+    "OpMachineNum":         1  ,
+    "noop":                 false,
+    "ENV": {
+        "basic_rule": true,
+        "noop": false,
+        "fixed_case": false,
+        "maxJobTypeNum": 5,
+        "maxOPperJob": 5,
+        "maxMachineNum": 5
+    }
+}

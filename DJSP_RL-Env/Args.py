@@ -1,0 +1,45 @@
+import argparse
+import json
+parser = argparse.ArgumentParser(description='Generate Job Shop Instance by file or some rules')
+parser.add_argument('--DDT', dest='DDT', type=float, default=1.0, help='Due Date Tightness of Job')
+parser.add_argument('--DDT_dt', dest='DDT_dt', type=float, default=0.5, help='Due Date Tightness of Job')
+parser.add_argument('--LENGTH', dest='LENGTH', type=int, default=500, help='Due Date Tightness of Job')
+parser.add_argument('--rule', dest='rule', type=str, default='rule1', help='Heuristic rule defined in paper')
+parser.add_argument('--MachineNum', dest='machine_num', type=int, default=8, help='Set the # of machines')
+parser.add_argument('--InitialJobNum', dest='initial_job_num', type=int, default=10, help='Set the initial # of jobs')
+parser.add_argument('--InsertedJobNum', dest='inserted_job_num', type=int, default=20, help='Set the # of inserted jobs')
+parser.add_argument('--JobTypeNum', dest='job_type_num', type=int, default=8, help='set number of job type')
+parser.add_argument('--OpNum', dest='op_num', type=int, default=6, help='Set maximum # of operation for each job')
+parser.add_argument('--ProcessTime', dest='process_time', type=float, default=50, help='Set maximum process time of operation')
+parser.add_argument('--RPT', dest='RPT_effect', action="store_true", help='Consider if real process time(RPT) is equal to expected process time(EPT)')
+parser.add_argument('--MOA', dest='mean_of_arrival', type=float, default=100, help='Mean of arrival time of exponential distribution')
+parser.add_argument('--EPOCH', dest='EPOCH', type=int, default=300, help='Set the training epoch')
+parser.add_argument('--TRAIN_STEP', dest='TRAIN_STEP', type=int, default=50000, help='Total training step')
+parser.add_argument('--SAVE_MODEL', dest='SAVE_MODEL', type=int, default=10, help='Save model parameter every 5(default) epoch')
+parser.add_argument('--LR', dest='lr', type=float, default=0.0025, help='Set the learning rate of training')
+parser.add_argument('--GAMMA', dest='GAMMA', type=float, default=0.99, help='Set the discount factor')
+parser.add_argument('--EPSILON', dest='EPSILON', type=float, default=0.1, help='Set the probability for epsilon greedy rate')
+parser.add_argument('--BATCH', dest='BATCH_SIZE', type=int, default=256, help='Batch size for training')
+parser.add_argument('--TAU', dest='tau', type=float, default=0.01, help='Discount factor in soft target update')
+parser.add_argument('--BUFFER', dest='buffer_size', type=int, default=100000, help='Replay buffer size')
+parser.add_argument('--DIR', dest='dir', type=str, default='../experiment', help='Directory for experiment')
+parser.add_argument('--MODEL_DIR', dest='model_dir', default='../experiment/model', help='Directory where the models stored.')
+parser.add_argument('--TestLog', dest='test_log', type=str, default='../RL_test', help='')
+parser.add_argument('--WarmUp', dest='warm_up', type=int, default=5000, help='Test x time for each instance')
+parser.add_argument('--env', dest='env', type=str, default='', help='Openai Gym env name if needed. ')
+parser.add_argument('--VALID_STEP', dest='valid_step', type=int, default=5000, help='Validation step')
+parser.add_argument('--NOOP', dest='noop', action="store_true", help='Env noop option')
+parser.add_argument('--FIXED', dest='fixed_type', action="store_false", help='random pick job type')
+parser.add_argument('--DJSP_INSTANCE', dest='djsp_instance', type=str, default = './test_instance/Case13',help='instance file')
+parser.add_argument('--INSTANCE_NUM', dest='instance_num', type=int, default = 5,help='number of generating instance')
+
+args = parser.parse_args()
+
+if __name__ == "__main__":
+    print(args)
+    with open('./args.json', 'w') as fp:
+        for d in vars(args):
+            fp.write(json.dumps(d))
+            fp.write("\n")
+    # for arg in vars(args):
+    #     print("arg: {:20}, value: {}".format(arg, getattr(args, arg)))
