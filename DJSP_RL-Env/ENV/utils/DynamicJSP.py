@@ -111,17 +111,17 @@ class DynamicJobShopInstance:
         self.Jobs[job_id].currentOP().RPT = info['RPT']
         # add op to logger
         self.logger.add_op(self.Jobs[job_id].currentOP(), machine_id, self.Jobs[job_id].job_type)
-        print('job_id: {},\tmachine_id: {},\top_id: {},\top.startTime: {},\top.RPT: {}'.format(
-            job_id, machine_id, op.op_id, round(op.startTime, 3), round(op.RPT, 3)))
+        # print('job_id: {},\tmachine_id: {},\top_id: {},\top.startTime: {},\top.RPT: {}'.format(
+        #     job_id, machine_id, op.op_id, round(op.startTime, 3), round(op.RPT, 3)))
         
         if self.Jobs[job_id].nextOP() != -1:
             self.Jobs[job_id].updateCurrentOP(initTime=OP_finishedTime)
         self.registerTime(OP_finishedTime)
-        print('self.TimeStamp:', self.TimeStamp)
-        print()
+        # print('self.TimeStamp:', [round(t, 3) for t in self.TimeStamp])
+        # print()
 
     def availableJobs(self):
-        self.updateTime()
+        # self.updateTime()
         res = []
         for job in self.Jobs:
             if job.isDone():
@@ -135,6 +135,7 @@ class DynamicJobShopInstance:
                 if flag is True:
                     res.append(job)
         if len(res) == 0:
+            self.updateTime()
             self.PASS += 1
             return self.availableJobs()
         else:
@@ -200,7 +201,7 @@ class DynamicJobShopInstance:
             for i in range(self.Inserted_job_num):
                 type_id = np.random.randint(self.Job_type_num)
                 self.insertJobs(1, init=False, op_config=self.JobType[type_id]['op_config'], job_type=type_id)
-
+        # print('self.TimeStamp:', self.TimeStamp)
         self.time_history = []
 
     def load_instance(self, file_path):

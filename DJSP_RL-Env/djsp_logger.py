@@ -39,20 +39,6 @@ class DJSP_Logger(object):
         self.history.append(op_info)
     
     def save(self, filename):
-        ### save only history
-        # with open(filename, 'wb') as f:
-        #     pickle.dump(self.history, f)
-
-        ### save as json file
-        # json_obj = {
-        #     'num_machine':      self.num_machine, 
-        #     'num_job_type':     self.num_job_type,
-        #     'history':          self.history, 
-        #     'jobs_to_schedule': self.jobs_to_schedule
-        # }
-        # with open(filename, 'wb') as f:
-        #     f.write(json_obj)
-
         ### save by torch.save
         torch.save({
             'num_machine':      self.num_machine, 
@@ -63,18 +49,6 @@ class DJSP_Logger(object):
         
 
     def load(self, filename):
-        ### load only history
-        # with open(filename, 'rb') as f:
-        #     self.history = pickle.load(f)
-
-        ### load as json object
-        # with open(filename, 'rb') as f:
-        #     json_obj = json.load(f)
-        # self.num_machine = json_obj['num_machine']
-        # self.num_job_type = json_obj['num_job_type']
-        # self.history = json_obj['history']
-        # self.jobs_to_schedule = json_obj['jobs_to_schedule']
-
         record = torch.load(filename)
         self.num_machine = record['num_machine']
         self.num_job_type = record['num_job_type']

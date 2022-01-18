@@ -3,7 +3,7 @@ from gym.utils import EzPickle
 from gym.spaces import Box, Dict, Discrete
 from ENV.utils.DynamicJSP import DynamicJobShopInstance
 from ENV.utils.PaperRule import Rule1, Rule2, Rule3, Rule4, Rule5, Rule6
-from ENV.utils.CommonHeuristic import EDD, SPT, LPT, SRPT, LS, FIFO
+from ENV.utils.CommonHeuristic import EDD, SPT, LPT, SRPT, LS, FIFO, CR
 import numpy as np 
 from gym import spaces
 from utils import json_to_dict

@@ -7,7 +7,7 @@ from ray import tune
 import ray.rllib.agents.ppo as ppo
 import ray.rllib.agents.dqn as dqn
 from ray.rllib.models import ModelCatalog
-from Network.MaskModel import TorchParametricActionsModel
+# from Network.MaskModel import TorchParametricActionsModel
 from ray.rllib.evaluation.metrics import collect_episodes, summarize_episodes
 from typing import Dict
 from ray.rllib.agents.callbacks import DefaultCallbacks
@@ -175,24 +175,35 @@ def test_ray(env_config, config, args):
     validate_cases = glob.glob('{}/validate_*.json'.format(args.job_type_file))
     validate_cases.sort()
     print('testing')
+    checkpoint_base_dir = './ray_results/Ours_CR_JT_Basic_Rule_Deterministic_./test_instance/Case13_Loose/DQN_thesis_env_58ddf_00000_0_2022-01-18_13-34-47/checkpoint_000500/checkpoint-500'
+
     for case in validate_cases:
-        print(case)
+        best_checkpoint = None
+        best_tardiness = 1 << 20
         env = Thesis_Env(env_config=env_config)
         env.load_instance(case)
    
         # checkpoint_path = './ray_results/Ours_CR_JT_Basic_Rule_Deterministic_Case13_Loose/DQN_thesis_env_a8ae8_00000_0_2021-12-14_01-11-06/checkpoint_000500/checkpoint-500'
-        checkpoint_path = './ray_results/Ours_CR_JT_Basic_Rule_Gaussian_Case12_Loose/DQN_thesis_env_f92ee_00000_0_2021-12-14_12-33-23/checkpoint_000500/checkpoint-500'
-        agent = dqn.DQNTrainer(config=config, env=Thesis_Env)
-        agent.restore(checkpoint_path)
-        episode_reward = 0
-        done = False
-        obs = env.reset()
-        while not done:
-            action = agent.compute_action(obs)
-            obs, reward, done, info = env.step(action)
-            episode_reward += reward
-        print('episode_reward:', episode_reward)
-        print('Tardiness:', env.DJSP_Instance.Tardiness())
+        # checkpoint_path = './ray_results/Ours_CR_JT_Basic_Rule_Deterministic_./test_instance/Case13_Loose/DQN_thesis_env_58ddf_00000_0_2022-01-18_13-34-47/checkpoint_000500/checkpoint-500'
+        for t in range(380, 420+1, 10):
+            checkpoint_path = './ray_results/Ours_CR_JT_Basic_Rule_Deterministic_./test_instance/Case13_Loose/DQN_thesis_env_58ddf_00000_0_2022-01-18_13-34-47/checkpoint_000{}/checkpoint-{}'.format(t, t)
+            agent = dqn.DQNTrainer(config=config, env=Thesis_Env)
+            agent.restore(checkpoint_path)
+            episode_reward = 0
+            done = False
+            obs = env.reset()
+            while not done:
+                action = agent.compute_action(obs)
+                obs, reward, done, info = env.step(action)
+                episode_reward += reward
+            tardiness = env.DJSP_Instance.Tardiness()
+            if tardiness < best_tardiness:
+                best_checkpoint = checkpoint_path.split('/')[-1]
+                best_tardiness = tardiness
+        print('case:', case)
+        print('\tcheckpoint:', best_checkpoint)
+        print('\tbest_tardiness:', best_tardiness)
+        
 
 def train_ray(env_config, config, args):
     # global CASE_DIR
@@ -238,7 +249,7 @@ if __name__ == '__main__':
     parser.add_argument('--experiment_name', type=str, default='Ours_CR_JT', help='experiment name')
     parser.add_argument('--DDT_type', type=str, default='Loose', help='Due Day Tightness type: Loose, Tight')
     parser.add_argument('--args_json', type=str, default='args.json', help='argument file')
-    parser.add_argument('--job_type_file', type=str, default='./test_instance/Case12', help='validate case directory')
+    parser.add_argument('--job_type_file', type=str, default='./test_instance/Case13', help='validate case directory')
     parser.add_argument('--test_only', action='store_true')
     args = parser.parse_args()
     # global CASE_DIR

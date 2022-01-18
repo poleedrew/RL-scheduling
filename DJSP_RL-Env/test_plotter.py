@@ -5,6 +5,7 @@ import glob
 from djsp_plotter import Plotter
 from djsp_logger import DJSP_Logger
 from ENV.utils.CommonHeuristic import EDD, SPT, LPT, SRPT, LS, FIFO, CR
+from ENV.utils.PaperRule import Rule1, Rule2, Rule3, Rule4, Rule5, Rule6
 from utils import json_to_dict
 from ENV.DJSP_Env import DJSP_Env
 
@@ -18,13 +19,19 @@ if __name__ == '__main__':
         'machineSelection': 'SPT'
     }
     rules = {
-        'SPT':  SPT(rule_config),
-        'LPT':  LPT(rule_config),
-        'SRPT': SRPT(rule_config),
-        'LS':   LS(rule_config),
-        'FIFO': FIFO(rule_config),
-        'EDD':  EDD(rule_config),
-        'CR':   CR(rule_config)
+        'SPT':      SPT(rule_config),
+        'LPT':      LPT(rule_config),
+        'SRPT':     SRPT(rule_config),
+        'LS':       LS(rule_config),
+        'FIFO':     FIFO(rule_config),
+        'EDD':      EDD(rule_config),
+        'CR':       CR(rule_config),
+        'Rule 1':   Rule1(),
+        'Rule 2':   Rule2(),
+        'Rule 3':   Rule3(),
+        'Rule 4':   Rule4(),
+        'Rule 5':   Rule5(),
+        'Rule 6':   Rule6(),
     }
     validate_dir = args.validate_dir
     validate_cases = glob.glob('{}/validate_*.json'.format(validate_dir))
@@ -47,9 +54,9 @@ if __name__ == '__main__':
             env.load_instance(case)
             env.restart()
             env.DJSP_Instance.scheduling(rule)
-            tardiness = env.DJSP_Instance.Tardiness()
-            makespan = env.DJSP_Instance.makespan()
-            print('{}_{}\ttardiness:{}, makespan:{}'.format(case, rule_name, tardiness, makespan))
+            tardiness = round(env.DJSP_Instance.Tardiness(), 2)
+            makespan = round(env.DJSP_Instance.makespan(), 2)
+            print('{}_{}\ttardiness: {}, makespan: {}'.format(case, rule_name, tardiness, makespan))
             info = env.DJSP_Instance.check_schedule()
             assert(info['error code'] == 0)
             

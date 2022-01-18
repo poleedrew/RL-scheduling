@@ -28,13 +28,13 @@ def schedule(env, filename):
     rule_config = {
         'machineSelection': 'SPT'
     }
-    env.DJSP_Instance.scheduling(CR(rule_config))
+    env.DJSP_Instance.scheduling(SPT(rule_config))
     info = env.DJSP_Instance.check_schedule()
     if info['error code'] != 0:
         print('[Error] ', info['status'])
     tardiness = env.DJSP_Instance.Tardiness()
     makespan = env.DJSP_Instance.makespan()
-    env.DJSP_Instance.logger.save('test_scheduling.pth')
+    env.DJSP_Instance.logger.save('test/test_scheduling.pth')
     return tardiness, makespan
 
 
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     tardiness1, makespan1 = schedule(env, validate_file)
 
     logger = DJSP_Logger()
-    logger.load('test_scheduling.pth')
+    logger.load('test/test_scheduling.pth')
     tardiness2, makespan2 = reschedule(env, validate_file, logger)
     print('tardiness:', tardiness1)
     print('makespan:', makespan1)

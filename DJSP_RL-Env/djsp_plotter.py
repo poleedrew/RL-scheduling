@@ -1,3 +1,4 @@
+from textwrap import indent
 from matplotlib import artist
 import matplotlib.pyplot as plt
 import numpy as np
@@ -111,22 +112,24 @@ class Plotter(object):
         fig.update_layout(hovermode='closest')    # ['x', 'y', 'closest', False, 'x unified', 'y unified']
         for job_type in range(self.num_job_type):
             indices = df.index[(df['job_type'] == str(job_type))]
+            if len(indices) == 0:
+                continue
             fig.data[job_type].x = df['RPT'][indices]
         fig.write_html(htmlname)
 
 if __name__ == '__main__':
     logger = DJSP_Logger()
-    logger.load('test_scheduling.pth')
+    logger.load('test/test_scheduling.pth')
 
-    # pprint(logger.history)
-    # plotter = Plotter(logger)
-    # plotter.plot_interactive_gantt('interactive_timeline.html')
-
+    pprint(logger.history)
     plotter = Plotter(logger)
+    plotter.plot_interactive_gantt('test/interactive_timeline.html')
+
+    # plotter = Plotter(logger)
     # plotter.plot_job_to_schedule('job_to_schedule.png')
 
-    plotter.plot_scheduling_process('scheduling_process')
-    plotter.images_to_video('scheduling_process')
+    # plotter.plot_scheduling_process('scheduling_process')
+    # plotter.images_to_video('scheduling_process')
 
 
 

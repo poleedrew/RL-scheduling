@@ -1,0 +1,43 @@
+{
+    "Machine_num":5,
+    "JobType":[
+       {
+          "type":0,
+          "arrivalTime":[0, 0],
+          "due_date":[100, 200, 300, 400, 500],
+          "op_config":[
+             {
+                "id":0,
+                "candidate_machine":[4],
+                "process_time":[-1.0, -1.0, -1.0, -1.0, 10],
+                "MPT":10
+             },
+             {
+                "id":1,
+                "candidate_machine":[0],
+                "process_time":[20, -1.0, -1.0, -1.0, -1.0],
+                "MPT":20
+             }
+          ]
+       },
+       {
+        "type":1,
+        "arrivalTime":[10, 0, 0],
+        "due_date":[
+          100
+        ],
+        "op_config":[
+           {
+              "id":0,
+              "candidate_machine":[0],
+              "process_time":[10, -1.0, -1.0, -1.0, -1.0],
+              "MPT":10
+           }
+        ]
+     }
+    ],
+    "DDT_range":[
+       1.5,
+       2.3
+    ]
+ }
