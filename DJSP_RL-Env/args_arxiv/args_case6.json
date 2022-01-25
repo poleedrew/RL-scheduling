@@ -8,7 +8,7 @@
     "MaxOpNum":             5,
     "MaxProcessTime":       50,
     "RPT_effect":           {
-        "flag": true,
+        "flag": false,
         "type": "Rework",
         "rework_probability": 0.1,
         "rework_percentage": 0.2
@@ -21,7 +21,7 @@
     "OpMachineNum":         1  ,
     "noop":                 false,
     "ENV": {
-        "basic_rule": true,
+        "basic_rule": false,
         "noop": false,
         "fixed_case": false,
         "maxJobTypeNum": 5,

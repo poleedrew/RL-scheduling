@@ -19,7 +19,7 @@ def findMaxInList(L):
 class Thesis_Env(DJSP_Env):
     def __init__(self, env_config):
         self.djspArgs = json_to_dict(env_config['djspArgsFile'])
-        super().__init__(self.djspArgs)
+        super().__init__(env_config)
     
         self.__fixed_case = False if 'fixed_case' not in self.djspArgs['ENV'] else self.djspArgs['ENV']['fixed_case']
         self.noop = False if 'noop' not in self.djspArgs['ENV'] else self.djspArgs['ENV']['noop']

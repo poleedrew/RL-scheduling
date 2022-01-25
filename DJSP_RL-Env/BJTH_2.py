@@ -1,6 +1,8 @@
+from tabnanny import check
 import numpy as np 
 import matplotlib.pyplot as plt
-from ENV.Thesis_Env import Thesis_Env
+# from ENV.Thesis_Env import Thesis_Env
+from ENV.DJSP_Env import DJSP_Env
 import ray
 from ray.tune.registry import register_env
 from ray import tune
@@ -111,7 +113,7 @@ def train_BJTH(args):
     }
     eval_fn = custom_evaluation
     config = {
-        "env": "thesis_env",
+        "env": "djsp_env",
         "env_config": env_config,# json_to_dict(env_config['djspArgsFile']),
         "framework": "torch",
         "model":{
@@ -168,8 +170,9 @@ def train_BJTH(args):
     #     env.DJSP_Instance.show_registedJobs()
 
 def env_creator(env_config):
-    return Thesis_Env(env_config)  # return an env instance
+    return DJSP_Env(env_config)  # return an env instance
     # return Foo_Env2(env_config)
+
 
 def test_ray(env_config, config, args):
     validate_cases = glob.glob('{}/validate_*.json'.format(args.job_type_file))
@@ -178,18 +181,23 @@ def test_ray(env_config, config, args):
     for case in validate_cases:
         best_checkpoint = None
         best_tardiness = 1 << 20
-        env = Thesis_Env(env_config=env_config)
+        env = DJSP_Env(env_config=env_config)
         env.load_instance(case)
+        print(args.checkpoint)
         for d in os.listdir(args.checkpoint):
-            if not (d[:3] == 'DQN' or os.path.isdir(d)):
+            if not ('DQN' in d):
                 continue
+            print(d)
             for t in range(380, 420+1, 10):
                 checkpoint_fname = 'checkpoint_000{}/checkpoint-{}'.format(t, t)
                 checkpoint_path = os.path.join(args.checkpoint, d)
                 checkpoint_path = os.path.join(checkpoint_path, checkpoint_fname)
                 print('checkpoint_path:', checkpoint_path)
-                agent = dqn.DQNTrainer(config=config, env=Thesis_Env)
-                agent.restore(checkpoint_path)
+                agent = dqn.DQNTrainer(config=config, env=DJSP_Env)
+                try:
+                    agent.restore(checkpoint_path)
+                except FileNotFoundError:
+                    break
                 episode_reward = 0
                 done = False
                 obs = env.reset()
@@ -222,7 +230,7 @@ def train_ray(env_config, config, args):
     print(RuleFlag)
 
     ray.init()
-    register_env("thesis_env", env_creator)
+    register_env("djsp_env", env_creator)
 
     stop = {
         "training_iteration": 500,
@@ -234,11 +242,9 @@ def train_ray(env_config, config, args):
         stop=stop,
         checkpoint_freq=10,
         # local_dir="~/ray_results", 
-        # local_dir="./ray_results",
-        local_dir="./results",  
-        # name="Thesis_{}_{}".format(processTimeFlag,CASE_DIR)
-        # name="Thesis_{}_{}_{}".format(RuleFlag, processTimeFlag, CASE_DIR), 
-        # name="{}_{}_{}_{}_{}".format(args.experiment_name, RuleFlag, processTimeFlag, CASE_DIR, args.DDT_type),
+        # local_dir="./ray_results", 
+        local_dir="./results", 
+        # name="{}_{}_{}_{}_{}".format(args.experiment_name, RuleFlag, processTimeFlag, CASE_DIR, args.DDT_type), 
         name="{}".format(args.experiment_name), 
         # keep_checkpoints_num=1, checkpoint_at_end=True
         )
@@ -246,9 +252,9 @@ def train_ray(env_config, config, args):
     
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Run Thesis program')
+    parser = argparse.ArgumentParser(description='Run BJTH program')
     ### Train
-    parser.add_argument('--experiment_name', type=str, default='Thesis', help='experiment name')
+    parser.add_argument('--experiment_name', type=str, default='Ours_CR_JT', help='experiment name')
     parser.add_argument('--args_json', type=str, default='args.json', help='argument file')
     parser.add_argument('--job_type_file', type=str, default='./test_instance/Case13', help='validate case directory')
     ### Test

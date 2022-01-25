@@ -16,10 +16,10 @@ def write_record(info, action_info):
     f.close()
 
 class DJSP_Env(gym.Env, EzPickle):
-    def __init__(self, DJSP_config):
-        self.config = DJSP_config
+    def __init__(self, env_config):
+        self.config = json_to_dict(env_config['djspArgsFile'])
         self.init_instance()
-        self.load_basic_type(DJSP_config['JobTypeFile'])
+        self.load_basic_type(self.config['JobTypeFile'])
         # self.DJSP_Instance.show_registedJobs()
         self.load_action()
         
