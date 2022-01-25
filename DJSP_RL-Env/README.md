@@ -17,3 +17,6 @@ cd ray_result
 ### example
 python3 parse_log.py --log_path=Baseline_BJTH_Rule_Gaussian_Case12_Tight/DQN_djsp_env_6ab6e_00000_0_2022-01-25_07-00-25
 ```
+
+## 數據紀錄
+https://docs.google.com/spreadsheets/d/11xHSxEhXY83JCEHfiYJKPGUT_3QbxfE6JYzEM2iGakk/edit#gid=977726332
