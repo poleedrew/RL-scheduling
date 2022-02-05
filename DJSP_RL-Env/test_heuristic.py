@@ -42,8 +42,14 @@ if __name__ == '__main__':
 
     # DJSP_config = json_to_dict('./args.json')
     DJSP_config = json_to_dict(args.args_json)
+    env_config = {
+        # "djspArgsFile": '/home/ubuntu/DJSP_RL/args.json',
+        # "djspArgsFile": '/mnt/nfs/work/oo12374/JSP/origin/DJSP_RL-Env/args.json',
+        "djspArgsFile": args.args_json,
+        "noop": False
+    }
     env = DJSP_Env(
-        DJSP_config = DJSP_config,
+        env_config = env_config,
     )
     # dir_name = './test_instance/Case13'
     dir_name = args.job_type_file
@@ -86,5 +92,5 @@ if __name__ == '__main__':
         'CR': CR(rule_config)
     }
     test_rule(CommonRules)
-    # test_rule(Rules)
+    test_rule(Rules)
     

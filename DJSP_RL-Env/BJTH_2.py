@@ -108,7 +108,8 @@ def custom_evaluation(trainer, eval_workers):
 def train_BJTH(args):
     env_config = {
         # "djspArgsFile": '/home/ubuntu/DJSP_RL/args.json',
-        "djspArgsFile": '/mnt/nfs/work/oo12374/JSP/origin/DJSP_RL-Env/args.json',
+        # "djspArgsFile": '/mnt/nfs/work/oo12374/JSP/origin/DJSP_RL-Env/args.json',
+        "djspArgsFile": args.args_json,
         "noop": False
     }
     eval_fn = custom_evaluation
@@ -243,7 +244,8 @@ def train_ray(env_config, config, args):
         checkpoint_freq=10,
         # local_dir="~/ray_results", 
         # local_dir="./ray_results", 
-        local_dir="./results", 
+        # local_dir="./results", 
+        local_dir="./results_2", 
         # name="{}_{}_{}_{}_{}".format(args.experiment_name, RuleFlag, processTimeFlag, CASE_DIR, args.DDT_type), 
         name="{}".format(args.experiment_name), 
         # keep_checkpoints_num=1, checkpoint_at_end=True

@@ -56,7 +56,8 @@ class DJSP_Env(gym.Env, EzPickle):
                 LPT ({'machineSelection': 'SPT'}), 
                 SRPT({'machineSelection': 'SPT'}), 
                 LS  ({'machineSelection': 'SPT'}), 
-                FIFO({'machineSelection': 'SPT'})
+                FIFO({'machineSelection': 'SPT'}),
+                CR  ({'machineSelection': 'SPT'}),
             ]
             self.action_info = {
                 0: 'EDD',
@@ -64,7 +65,8 @@ class DJSP_Env(gym.Env, EzPickle):
                 2: 'LPT',
                 3: 'SRPT',
                 4: 'LS',
-                5: 'FIFO'
+                5: 'FIFO',
+                6: 'CR',
             }
 
 
