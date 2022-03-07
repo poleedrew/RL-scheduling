@@ -1,3 +1,4 @@
+from fileinput import filename
 import numpy as np 
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -5,6 +6,7 @@ from tqdm import tqdm
 import heapq
 from utils import Job, Machine
 import bisect
+import os
 
 from ENV.utils.Generator import GenOperation
 from ENV.utils.PaperRule import Rule1, Rule2, Rule3, Rule4, Rule5, Rule6
@@ -48,7 +50,7 @@ class DynamicJobShopInstance:
             self.generate_case()
         else:
             self.load_instance(Job_type_file)
-        self.logger = DJSP_Logger()
+        self.logger = DJSP_Logger(num_job=Initial_job_num+Inserted_job_num, num_machine=Machine_num)
     
     def generate_case(self):
         # initial jobs
@@ -225,7 +227,7 @@ class DynamicJobShopInstance:
             )
             self.Jobs[-1].due_date = t[2]
         self.restart()
-
+        
         for job in self.Jobs:
             self.logger.add_job(job)
 
