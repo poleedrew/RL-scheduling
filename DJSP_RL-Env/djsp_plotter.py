@@ -100,14 +100,14 @@ class Plotter(object):
             out.write(img_array[i])
         out.release()
 
-    def plot_interactive_gantt(self, htmlname, color_type='job_type'):
+    def plot_interactive_gantt(self, htmlname, color_by='job_type'):
         ### timeline
         ### different color means different 'job type'
         ### x-axis: date
         data = self.logger.to('interactive_gantt_input')
         df = pd.DataFrame(data)
         fig = px.timeline(
-            df, x_start='StartDateTime', x_end='FinishDateTime', y='machine_id', color=color_type, 
+            df, x_start='StartDateTime', x_end='FinishDateTime', y='machine_id', color=color_by, 
             hover_name='Order', hover_data=['job_id', 'op_id', 'RPT', 'Start', 'Finish'])
         fig.update_layout(xaxis_type='date')    # ['-', 'linear', 'log', 'date', 'category', 'multicategory']
         fig.write_html(htmlname)

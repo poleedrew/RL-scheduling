@@ -1,0 +1,765 @@
+[
+    {
+        "Name": "Job0, Op0, Machine3, Start time:0.000000, RPT:10.460629",
+        "ID": 0,
+        "SortOrder": 0,
+        "StartTime": "2020-01-01T00:00:00Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job1, Op0, Machine0, Start time:0.000000, RPT:13.827908",
+        "ID": 1,
+        "SortOrder": 1,
+        "StartTime": "2020-01-01T00:00:00Z",
+        "Effort": "13:00:00"
+    },
+    {
+        "Name": "Job2, Op0, Machine1, Start time:0.000000, RPT:35.144494",
+        "ID": 2,
+        "SortOrder": 2,
+        "StartTime": "2020-01-01T00:00:00Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job9, Op0, Machine2, Start time:0.000000, RPT:27.630688",
+        "ID": 3,
+        "SortOrder": 3,
+        "StartTime": "2020-01-01T00:00:00Z",
+        "Effort": "27:00:00"
+    },
+    {
+        "Name": "Job3, Op0, Machine4, Start time:0.000000, RPT:46.449004",
+        "ID": 4,
+        "SortOrder": 4,
+        "StartTime": "2020-01-01T00:00:00Z",
+        "Effort": "46:00:00"
+    },
+    {
+        "Name": "Job0, Op1, Machine3, Start time:10.460629, RPT:38.982402",
+        "ID": 5,
+        "SortOrder": 5,
+        "StartTime": "2020-01-01T10:27:38Z",
+        "Effort": "38:00:00"
+    },
+    {
+        "Name": "Job4, Op0, Machine0, Start time:13.827908, RPT:35.390912",
+        "ID": 6,
+        "SortOrder": 6,
+        "StartTime": "2020-01-01T13:49:40Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job9, Op1, Machine2, Start time:27.630688, RPT:29.602238",
+        "ID": 7,
+        "SortOrder": 7,
+        "StartTime": "2020-01-02T03:37:50Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job1, Op1, Machine1, Start time:35.144494, RPT:35.515619",
+        "ID": 8,
+        "SortOrder": 8,
+        "StartTime": "2020-01-02T11:08:40Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job3, Op1, Machine4, Start time:46.449004, RPT:46.236995",
+        "ID": 9,
+        "SortOrder": 9,
+        "StartTime": "2020-01-02T22:26:56Z",
+        "Effort": "46:00:00"
+    },
+    {
+        "Name": "Job10, Op0, Machine0, Start time:49.218821, RPT:48.130457",
+        "ID": 10,
+        "SortOrder": 10,
+        "StartTime": "2020-01-03T01:13:07Z",
+        "Effort": "48:00:00"
+    },
+    {
+        "Name": "Job2, Op1, Machine3, Start time:49.443032, RPT:38.982402",
+        "ID": 11,
+        "SortOrder": 11,
+        "StartTime": "2020-01-03T01:26:34Z",
+        "Effort": "38:00:00"
+    },
+    {
+        "Name": "Job5, Op0, Machine2, Start time:57.232926, RPT:10.472523",
+        "ID": 12,
+        "SortOrder": 12,
+        "StartTime": "2020-01-03T09:13:58Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job5, Op1, Machine2, Start time:67.705449, RPT:39.868831",
+        "ID": 13,
+        "SortOrder": 13,
+        "StartTime": "2020-01-03T19:42:19Z",
+        "Effort": "39:00:00"
+    },
+    {
+        "Name": "Job4, Op1, Machine1, Start time:70.660113, RPT:15.118448",
+        "ID": 14,
+        "SortOrder": 14,
+        "StartTime": "2020-01-03T22:39:36Z",
+        "Effort": "15:00:00"
+    },
+    {
+        "Name": "Job11, Op0, Machine1, Start time:85.778562, RPT:35.144494",
+        "ID": 15,
+        "SortOrder": 15,
+        "StartTime": "2020-01-04T13:46:42Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job10, Op1, Machine3, Start time:97.349277, RPT:21.609896",
+        "ID": 16,
+        "SortOrder": 16,
+        "StartTime": "2020-01-05T01:20:57Z",
+        "Effort": "21:00:00"
+    },
+    {
+        "Name": "Job6, Op0, Machine0, Start time:97.349277, RPT:43.654592",
+        "ID": 17,
+        "SortOrder": 17,
+        "StartTime": "2020-01-05T01:20:57Z",
+        "Effort": "43:00:00"
+    },
+    {
+        "Name": "Job5, Op2, Machine4, Start time:107.574281, RPT:13.796276",
+        "ID": 18,
+        "SortOrder": 18,
+        "StartTime": "2020-01-05T11:34:27Z",
+        "Effort": "13:00:00"
+    },
+    {
+        "Name": "Job7, Op0, Machine2, Start time:107.574281, RPT:10.472523",
+        "ID": 19,
+        "SortOrder": 19,
+        "StartTime": "2020-01-05T11:34:27Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job7, Op1, Machine2, Start time:118.046804, RPT:39.868831",
+        "ID": 20,
+        "SortOrder": 20,
+        "StartTime": "2020-01-05T22:02:48Z",
+        "Effort": "39:00:00"
+    },
+    {
+        "Name": "Job11, Op1, Machine3, Start time:120.923056, RPT:38.982402",
+        "ID": 21,
+        "SortOrder": 21,
+        "StartTime": "2020-01-06T00:55:23Z",
+        "Effort": "38:00:00"
+    },
+    {
+        "Name": "Job6, Op1, Machine1, Start time:141.003869, RPT:32.301110",
+        "ID": 22,
+        "SortOrder": 22,
+        "StartTime": "2020-01-06T21:00:13Z",
+        "Effort": "32:00:00"
+    },
+    {
+        "Name": "Job8, Op0, Machine0, Start time:141.003869, RPT:43.654592",
+        "ID": 23,
+        "SortOrder": 23,
+        "StartTime": "2020-01-06T21:00:13Z",
+        "Effort": "43:00:00"
+    },
+    {
+        "Name": "Job7, Op2, Machine4, Start time:157.915635, RPT:13.796276",
+        "ID": 24,
+        "SortOrder": 24,
+        "StartTime": "2020-01-07T13:54:56Z",
+        "Effort": "13:00:00"
+    },
+    {
+        "Name": "Job6, Op2, Machine2, Start time:173.304979, RPT:45.171828",
+        "ID": 25,
+        "SortOrder": 25,
+        "StartTime": "2020-01-08T05:18:17Z",
+        "Effort": "45:00:00"
+    },
+    {
+        "Name": "Job8, Op1, Machine3, Start time:184.658461, RPT:29.109829",
+        "ID": 26,
+        "SortOrder": 26,
+        "StartTime": "2020-01-08T16:39:30Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job12, Op0, Machine0, Start time:184.658461, RPT:43.654592",
+        "ID": 27,
+        "SortOrder": 27,
+        "StartTime": "2020-01-08T16:39:30Z",
+        "Effort": "43:00:00"
+    },
+    {
+        "Name": "Job13, Op0, Machine1, Start time:189.953787, RPT:35.144494",
+        "ID": 28,
+        "SortOrder": 28,
+        "StartTime": "2020-01-08T21:57:13Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job15, Op0, Machine3, Start time:213.768290, RPT:10.460629",
+        "ID": 29,
+        "SortOrder": 29,
+        "StartTime": "2020-01-09T21:46:05Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job8, Op2, Machine4, Start time:213.768290, RPT:13.796276",
+        "ID": 30,
+        "SortOrder": 30,
+        "StartTime": "2020-01-09T21:46:05Z",
+        "Effort": "13:00:00"
+    },
+    {
+        "Name": "Job14, Op0, Machine2, Start time:218.476807, RPT:27.630688",
+        "ID": 31,
+        "SortOrder": 31,
+        "StartTime": "2020-01-10T02:28:36Z",
+        "Effort": "27:00:00"
+    },
+    {
+        "Name": "Job15, Op1, Machine3, Start time:224.228919, RPT:38.982402",
+        "ID": 32,
+        "SortOrder": 32,
+        "StartTime": "2020-01-10T08:13:44Z",
+        "Effort": "38:00:00"
+    },
+    {
+        "Name": "Job13, Op1, Machine1, Start time:225.098281, RPT:35.515619",
+        "ID": 33,
+        "SortOrder": 33,
+        "StartTime": "2020-01-10T09:05:53Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job12, Op1, Machine4, Start time:228.313053, RPT:24.786867",
+        "ID": 34,
+        "SortOrder": 34,
+        "StartTime": "2020-01-10T12:18:46Z",
+        "Effort": "24:00:00"
+    },
+    {
+        "Name": "Job14, Op1, Machine2, Start time:246.107495, RPT:29.602238",
+        "ID": 35,
+        "SortOrder": 35,
+        "StartTime": "2020-01-11T06:06:26Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job12, Op2, Machine4, Start time:253.099920, RPT:13.796276",
+        "ID": 36,
+        "SortOrder": 36,
+        "StartTime": "2020-01-11T13:05:59Z",
+        "Effort": "13:00:00"
+    },
+    {
+        "Name": "Job16, Op0, Machine1, Start time:260.613901, RPT:27.721563",
+        "ID": 37,
+        "SortOrder": 37,
+        "StartTime": "2020-01-11T20:36:50Z",
+        "Effort": "27:00:00"
+    },
+    {
+        "Name": "Job17, Op0, Machine0, Start time:274.968397, RPT:43.654592",
+        "ID": 38,
+        "SortOrder": 38,
+        "StartTime": "2020-01-12T10:58:06Z",
+        "Effort": "43:00:00"
+    },
+    {
+        "Name": "Job16, Op1, Machine2, Start time:288.335463, RPT:29.602238",
+        "ID": 39,
+        "SortOrder": 39,
+        "StartTime": "2020-01-13T00:20:07Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job18, Op0, Machine3, Start time:306.542965, RPT:48.535502",
+        "ID": 40,
+        "SortOrder": 40,
+        "StartTime": "2020-01-13T18:32:34Z",
+        "Effort": "48:00:00"
+    },
+    {
+        "Name": "Job17, Op1, Machine4, Start time:318.622988, RPT:24.786867",
+        "ID": 41,
+        "SortOrder": 41,
+        "StartTime": "2020-01-14T06:37:22Z",
+        "Effort": "24:00:00"
+    },
+    {
+        "Name": "Job17, Op2, Machine1, Start time:343.409856, RPT:10.552359",
+        "ID": 42,
+        "SortOrder": 42,
+        "StartTime": "2020-01-15T07:24:35Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job18, Op1, Machine2, Start time:355.078466, RPT:29.602238",
+        "ID": 43,
+        "SortOrder": 43,
+        "StartTime": "2020-01-15T19:04:42Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job19, Op0, Machine0, Start time:361.276979, RPT:13.827908",
+        "ID": 44,
+        "SortOrder": 44,
+        "StartTime": "2020-01-16T01:16:37Z",
+        "Effort": "13:00:00"
+    },
+    {
+        "Name": "Job20, Op0, Machine1, Start time:370.121156, RPT:27.721563",
+        "ID": 45,
+        "SortOrder": 45,
+        "StartTime": "2020-01-16T10:07:16Z",
+        "Effort": "27:00:00"
+    },
+    {
+        "Name": "Job19, Op1, Machine3, Start time:375.104887, RPT:38.982402",
+        "ID": 46,
+        "SortOrder": 46,
+        "StartTime": "2020-01-16T15:06:17Z",
+        "Effort": "38:00:00"
+    },
+    {
+        "Name": "Job20, Op1, Machine2, Start time:397.842719, RPT:29.602238",
+        "ID": 47,
+        "SortOrder": 47,
+        "StartTime": "2020-01-17T13:50:33Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job21, Op0, Machine1, Start time:428.522708, RPT:27.721563",
+        "ID": 48,
+        "SortOrder": 48,
+        "StartTime": "2020-01-18T20:31:21Z",
+        "Effort": "27:00:00"
+    },
+    {
+        "Name": "Job22, Op0, Machine3, Start time:433.857302, RPT:48.535502",
+        "ID": 49,
+        "SortOrder": 49,
+        "StartTime": "2020-01-19T01:51:26Z",
+        "Effort": "48:00:00"
+    },
+    {
+        "Name": "Job21, Op1, Machine2, Start time:456.244270, RPT:29.602238",
+        "ID": 50,
+        "SortOrder": 50,
+        "StartTime": "2020-01-20T00:14:39Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job23, Op0, Machine4, Start time:470.952645, RPT:47.833828",
+        "ID": 51,
+        "SortOrder": 51,
+        "StartTime": "2020-01-20T14:57:09Z",
+        "Effort": "47:00:00"
+    },
+    {
+        "Name": "Job22, Op1, Machine1, Start time:482.392804, RPT:20.076657",
+        "ID": 52,
+        "SortOrder": 52,
+        "StartTime": "2020-01-21T02:23:34Z",
+        "Effort": "20:00:00"
+    },
+    {
+        "Name": "Job24, Op0, Machine0, Start time:493.847763, RPT:13.827908",
+        "ID": 53,
+        "SortOrder": 53,
+        "StartTime": "2020-01-21T13:50:51Z",
+        "Effort": "13:00:00"
+    },
+    {
+        "Name": "Job24, Op1, Machine3, Start time:507.675671, RPT:38.982402",
+        "ID": 54,
+        "SortOrder": 54,
+        "StartTime": "2020-01-22T03:40:32Z",
+        "Effort": "38:00:00"
+    },
+    {
+        "Name": "Job25, Op0, Machine0, Start time:507.675671, RPT:35.390912",
+        "ID": 55,
+        "SortOrder": 55,
+        "StartTime": "2020-01-22T03:40:32Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job27, Op0, Machine1, Start time:517.822911, RPT:35.144494",
+        "ID": 56,
+        "SortOrder": 56,
+        "StartTime": "2020-01-22T13:49:22Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job23, Op1, Machine4, Start time:518.786473, RPT:41.446445",
+        "ID": 57,
+        "SortOrder": 57,
+        "StartTime": "2020-01-22T14:47:11Z",
+        "Effort": "41:00:00"
+    },
+    {
+        "Name": "Job28, Op0, Machine0, Start time:543.066584, RPT:35.390912",
+        "ID": 58,
+        "SortOrder": 58,
+        "StartTime": "2020-01-23T15:03:59Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job29, Op0, Machine3, Start time:546.658074, RPT:10.460629",
+        "ID": 59,
+        "SortOrder": 59,
+        "StartTime": "2020-01-23T18:39:29Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job27, Op1, Machine1, Start time:552.967405, RPT:35.515619",
+        "ID": 60,
+        "SortOrder": 60,
+        "StartTime": "2020-01-24T00:58:02Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job29, Op1, Machine3, Start time:557.118703, RPT:38.982402",
+        "ID": 61,
+        "SortOrder": 61,
+        "StartTime": "2020-01-24T05:07:07Z",
+        "Effort": "38:00:00"
+    },
+    {
+        "Name": "Job25, Op1, Machine4, Start time:560.232918, RPT:46.236995",
+        "ID": 62,
+        "SortOrder": 62,
+        "StartTime": "2020-01-24T08:13:58Z",
+        "Effort": "46:00:00"
+    },
+    {
+        "Name": "Job30, Op0, Machine0, Start time:578.457496, RPT:35.390912",
+        "ID": 63,
+        "SortOrder": 63,
+        "StartTime": "2020-01-25T02:27:26Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job31, Op0, Machine1, Start time:588.483024, RPT:35.144494",
+        "ID": 64,
+        "SortOrder": 64,
+        "StartTime": "2020-01-25T12:28:58Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job26, Op0, Machine3, Start time:596.101105, RPT:16.443199",
+        "ID": 65,
+        "SortOrder": 65,
+        "StartTime": "2020-01-25T20:06:03Z",
+        "Effort": "16:00:00"
+    },
+    {
+        "Name": "Job33, Op0, Machine2, Start time:598.335092, RPT:27.630688",
+        "ID": 66,
+        "SortOrder": 66,
+        "StartTime": "2020-01-25T22:20:06Z",
+        "Effort": "27:00:00"
+    },
+    {
+        "Name": "Job28, Op1, Machine4, Start time:606.469912, RPT:46.236995",
+        "ID": 67,
+        "SortOrder": 67,
+        "StartTime": "2020-01-26T06:28:11Z",
+        "Effort": "46:00:00"
+    },
+    {
+        "Name": "Job26, Op1, Machine3, Start time:612.544304, RPT:21.609896",
+        "ID": 68,
+        "SortOrder": 68,
+        "StartTime": "2020-01-26T12:32:39Z",
+        "Effort": "21:00:00"
+    },
+    {
+        "Name": "Job32, Op0, Machine0, Start time:613.848408, RPT:35.390912",
+        "ID": 69,
+        "SortOrder": 69,
+        "StartTime": "2020-01-26T13:50:54Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job31, Op1, Machine1, Start time:623.627518, RPT:35.515619",
+        "ID": 70,
+        "SortOrder": 70,
+        "StartTime": "2020-01-26T23:37:39Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job33, Op1, Machine2, Start time:625.965780, RPT:29.602238",
+        "ID": 71,
+        "SortOrder": 71,
+        "StartTime": "2020-01-27T01:57:56Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job36, Op0, Machine3, Start time:649.206576, RPT:10.460629",
+        "ID": 72,
+        "SortOrder": 72,
+        "StartTime": "2020-01-28T01:12:23Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job34, Op0, Machine0, Start time:649.239320, RPT:43.654592",
+        "ID": 73,
+        "SortOrder": 73,
+        "StartTime": "2020-01-28T01:14:21Z",
+        "Effort": "43:00:00"
+    },
+    {
+        "Name": "Job30, Op1, Machine4, Start time:652.706907, RPT:46.236995",
+        "ID": 74,
+        "SortOrder": 74,
+        "StartTime": "2020-01-28T04:42:24Z",
+        "Effort": "46:00:00"
+    },
+    {
+        "Name": "Job35, Op0, Machine2, Start time:655.568017, RPT:10.472523",
+        "ID": 75,
+        "SortOrder": 75,
+        "StartTime": "2020-01-28T07:34:04Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job32, Op1, Machine1, Start time:659.143138, RPT:15.118448",
+        "ID": 76,
+        "SortOrder": 76,
+        "StartTime": "2020-01-28T11:08:35Z",
+        "Effort": "15:00:00"
+    },
+    {
+        "Name": "Job36, Op1, Machine3, Start time:659.667205, RPT:38.982402",
+        "ID": 77,
+        "SortOrder": 77,
+        "StartTime": "2020-01-28T11:40:01Z",
+        "Effort": "38:00:00"
+    },
+    {
+        "Name": "Job35, Op1, Machine2, Start time:666.040541, RPT:39.868831",
+        "ID": 78,
+        "SortOrder": 78,
+        "StartTime": "2020-01-28T18:02:25Z",
+        "Effort": "39:00:00"
+    },
+    {
+        "Name": "Job37, Op0, Machine0, Start time:692.893912, RPT:48.130457",
+        "ID": 79,
+        "SortOrder": 79,
+        "StartTime": "2020-01-29T20:53:38Z",
+        "Effort": "48:00:00"
+    },
+    {
+        "Name": "Job34, Op1, Machine1, Start time:692.893912, RPT:32.301110",
+        "ID": 80,
+        "SortOrder": 80,
+        "StartTime": "2020-01-29T20:53:38Z",
+        "Effort": "32:00:00"
+    },
+    {
+        "Name": "Job35, Op2, Machine4, Start time:705.909372, RPT:13.796276",
+        "ID": 81,
+        "SortOrder": 81,
+        "StartTime": "2020-01-30T09:54:33Z",
+        "Effort": "13:00:00"
+    },
+    {
+        "Name": "Job38, Op0, Machine3, Start time:721.029185, RPT:10.460629",
+        "ID": 82,
+        "SortOrder": 82,
+        "StartTime": "2020-01-31T01:01:45Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job34, Op2, Machine2, Start time:725.195022, RPT:45.171828",
+        "ID": 83,
+        "SortOrder": 83,
+        "StartTime": "2020-01-31T05:11:42Z",
+        "Effort": "45:00:00"
+    },
+    {
+        "Name": "Job38, Op1, Machine1, Start time:731.489814, RPT:35.515619",
+        "ID": 84,
+        "SortOrder": 84,
+        "StartTime": "2020-01-31T11:29:23Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job37, Op1, Machine4, Start time:741.024368, RPT:41.446445",
+        "ID": 85,
+        "SortOrder": 85,
+        "StartTime": "2020-01-31T21:01:27Z",
+        "Effort": "41:00:00"
+    },
+    {
+        "Name": "Job39, Op0, Machine0, Start time:751.889298, RPT:35.390912",
+        "ID": 86,
+        "SortOrder": 86,
+        "StartTime": "2020-02-01T07:53:21Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job40, Op0, Machine3, Start time:775.559873, RPT:48.535502",
+        "ID": 87,
+        "SortOrder": 87,
+        "StartTime": "2020-02-02T07:33:35Z",
+        "Effort": "48:00:00"
+    },
+    {
+        "Name": "Job39, Op1, Machine1, Start time:787.280210, RPT:15.118448",
+        "ID": 88,
+        "SortOrder": 88,
+        "StartTime": "2020-02-02T19:16:48Z",
+        "Effort": "15:00:00"
+    },
+    {
+        "Name": "Job41, Op0, Machine4, Start time:789.188616, RPT:46.449004",
+        "ID": 89,
+        "SortOrder": 89,
+        "StartTime": "2020-02-02T21:11:19Z",
+        "Effort": "46:00:00"
+    },
+    {
+        "Name": "Job42, Op0, Machine0, Start time:797.167149, RPT:48.130457",
+        "ID": 90,
+        "SortOrder": 90,
+        "StartTime": "2020-02-03T05:10:01Z",
+        "Effort": "48:00:00"
+    },
+    {
+        "Name": "Job40, Op1, Machine2, Start time:824.095375, RPT:29.602238",
+        "ID": 91,
+        "SortOrder": 91,
+        "StartTime": "2020-02-04T08:05:43Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job43, Op0, Machine1, Start time:828.519723, RPT:27.721563",
+        "ID": 92,
+        "SortOrder": 92,
+        "StartTime": "2020-02-04T12:31:11Z",
+        "Effort": "27:00:00"
+    },
+    {
+        "Name": "Job41, Op1, Machine4, Start time:835.637619, RPT:46.236995",
+        "ID": 93,
+        "SortOrder": 93,
+        "StartTime": "2020-02-04T19:38:15Z",
+        "Effort": "46:00:00"
+    },
+    {
+        "Name": "Job44, Op0, Machine0, Start time:845.297606, RPT:35.390912",
+        "ID": 94,
+        "SortOrder": 94,
+        "StartTime": "2020-02-05T05:17:51Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job42, Op1, Machine3, Start time:845.297606, RPT:21.609896",
+        "ID": 95,
+        "SortOrder": 95,
+        "StartTime": "2020-02-05T05:17:51Z",
+        "Effort": "21:00:00"
+    },
+    {
+        "Name": "Job45, Op0, Machine2, Start time:855.457935, RPT:27.630688",
+        "ID": 96,
+        "SortOrder": 96,
+        "StartTime": "2020-02-05T15:27:28Z",
+        "Effort": "27:00:00"
+    },
+    {
+        "Name": "Job43, Op1, Machine1, Start time:856.241286, RPT:20.076657",
+        "ID": 97,
+        "SortOrder": 97,
+        "StartTime": "2020-02-05T16:14:28Z",
+        "Effort": "20:00:00"
+    },
+    {
+        "Name": "Job44, Op1, Machine1, Start time:880.688518, RPT:15.118448",
+        "ID": 98,
+        "SortOrder": 98,
+        "StartTime": "2020-02-06T16:41:18Z",
+        "Effort": "15:00:00"
+    },
+    {
+        "Name": "Job46, Op0, Machine0, Start time:880.688518, RPT:43.654592",
+        "ID": 99,
+        "SortOrder": 99,
+        "StartTime": "2020-02-06T16:41:18Z",
+        "Effort": "43:00:00"
+    },
+    {
+        "Name": "Job45, Op1, Machine2, Start time:883.088623, RPT:29.602238",
+        "ID": 100,
+        "SortOrder": 100,
+        "StartTime": "2020-02-06T19:05:19Z",
+        "Effort": "29:00:00"
+    },
+    {
+        "Name": "Job47, Op0, Machine4, Start time:887.309436, RPT:46.449004",
+        "ID": 101,
+        "SortOrder": 101,
+        "StartTime": "2020-02-06T23:18:33Z",
+        "Effort": "46:00:00"
+    },
+    {
+        "Name": "Job48, Op0, Machine3, Start time:918.585522, RPT:10.460629",
+        "ID": 102,
+        "SortOrder": 102,
+        "StartTime": "2020-02-08T06:35:07Z",
+        "Effort": "10:00:00"
+    },
+    {
+        "Name": "Job49, Op0, Machine0, Start time:924.343110, RPT:35.390912",
+        "ID": 103,
+        "SortOrder": 103,
+        "StartTime": "2020-02-08T12:20:35Z",
+        "Effort": "35:00:00"
+    },
+    {
+        "Name": "Job46, Op1, Machine1, Start time:924.343110, RPT:32.301110",
+        "ID": 104,
+        "SortOrder": 104,
+        "StartTime": "2020-02-08T12:20:35Z",
+        "Effort": "32:00:00"
+    },
+    {
+        "Name": "Job48, Op1, Machine3, Start time:929.046151, RPT:38.982402",
+        "ID": 105,
+        "SortOrder": 105,
+        "StartTime": "2020-02-08T17:02:46Z",
+        "Effort": "38:00:00"
+    },
+    {
+        "Name": "Job47, Op1, Machine4, Start time:933.758440, RPT:46.236995",
+        "ID": 106,
+        "SortOrder": 106,
+        "StartTime": "2020-02-08T21:45:30Z",
+        "Effort": "46:00:00"
+    },
+    {
+        "Name": "Job46, Op2, Machine2, Start time:956.644220, RPT:45.171828",
+        "ID": 107,
+        "SortOrder": 107,
+        "StartTime": "2020-02-09T20:38:39Z",
+        "Effort": "45:00:00"
+    },
+    {
+        "Name": "Job49, Op1, Machine1, Start time:959.734022, RPT:15.118448",
+        "ID": 108,
+        "SortOrder": 108,
+        "StartTime": "2020-02-09T23:44:02Z",
+        "Effort": "15:00:00"
+    }
+]

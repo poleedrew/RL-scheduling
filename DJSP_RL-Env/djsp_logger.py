@@ -1,7 +1,9 @@
+from cmd import IDENTCHARS
 import json
 import pickle
 import sys
 import os
+from textwrap import indent
 import numpy as np
 import pandas as pd
 import torch
@@ -50,9 +52,9 @@ class DJSP_Logger(object):
             'job_id':       op.job_id,
             'op_id':        op.op_id,
             'machine_id':   machine_id,
-            'startTime':    op.startTime, 
+            'start_time':    op.startTime, 
             'RPT':          op.RPT,
-            'finishTime':   op.startTime+op.RPT,
+            'finish_time':   op.startTime+op.RPT,
             'job_type':     job_type,
         }
         self.timestamp += 1
@@ -62,7 +64,7 @@ class DJSP_Logger(object):
                 "INSERT INTO LOGGER (TIMESTAMP, MACHINE_ID, JOB_TYPE, JOB_ID, OP_ID, START_TIME, FINISH_TIME, RPT) \
                 VALUES (%d, %d, %d, %d, %d, %f, %f, %f)" %(
                     op_info['timestamp'], op_info['machine_id'], op_info['job_type'], op_info['job_id'], op_info['op_id'], 
-                    op_info['startTime'], op_info['finishTime'], op_info['RPT']))
+                    op_info['start_time'], op_info['finish_time'], op_info['RPT']))
     
     def save(self, filename):
         ### save by torch.save
@@ -75,13 +77,14 @@ class DJSP_Logger(object):
         self.conn.commit()
         self.conn.close()
 
-    def load(self, filename, db_path):
+    def load(self, filename, db_path=None):
         record = torch.load(filename)
         self.num_machine = record['num_machine']
         self.num_job_type = record['num_job_type']
         self.history = record['history']
         self.jobs_to_schedule = record['jobs_to_schedule']
-        self.conn = sqlite3.connect(db_path)
+        if db_path != None:
+            self.conn = sqlite3.connect(db_path)
     
     def to(self, fig_type):        
         if fig_type == 'interactive_gantt_input':
@@ -92,10 +95,10 @@ class DJSP_Logger(object):
                     Order =         t,
                     Task =          'Machine '+str(op_info['machine_id']), 
                     machine_id =    op_info['machine_id'],
-                    Start =         op_info['startTime'],
-                    Finish =        op_info['finishTime'],
-                    StartDateTime = unix_epoch + timedelta(days=op_info['startTime']),
-                    FinishDateTime = unix_epoch + timedelta(days=op_info['finishTime']),
+                    Start =         op_info['start_time'],
+                    Finish =        op_info['finish_time'],
+                    StartDateTime = unix_epoch + timedelta(days=op_info['start_time']),
+                    FinishDateTime = unix_epoch + timedelta(days=op_info['finish_time']),
                     RPT =           op_info['RPT'],
                     job_type =      str(op_info['job_type']),
                     job_id =        op_info['job_id'],
@@ -137,22 +140,47 @@ class DJSP_Logger(object):
                 machine_histories.append((segment, color))
             return machine_histories
     def radiantQ_json(self):
+        unix_epoch = datetime.strptime('2020-01-01T00:00:00Z', '%Y-%m-%dT%H:%M:%SZ')
+        data = []
         for t, op_info in enumerate(self.history):
-            d = dict(
-                Order =         t,
-                Task =          'Machine '+str(op_info['machine_id']), 
-                machine_id =    op_info['machine_id'],
-                Start =         op_info['startTime'],
-                Finish =        op_info['finishTime'],
-                StartDateTime = unix_epoch + timedelta(days=op_info['startTime']),
-                FinishDateTime = unix_epoch + timedelta(days=op_info['finishTime']),
-                RPT =           op_info['RPT'],
-                job_type =      str(op_info['job_type']),
-                job_id =        op_info['job_id'],
-                op_id =         op_info['op_id'],
-                foo =           t % 5,
-            )
+            # if t >= 3:
+            #     break
+            start_time = unix_epoch + timedelta(hours=op_info['start_time'])
+            d = {
+                # "Name":         "Task " + str(t),
+                "Name":         "Job%d, Op%d, Machine%d, Start time:%f, RPT:%f" %(
+                    op_info['job_id'], op_info['op_id'], op_info['machine_id'], op_info['start_time'], op_info['RPT']),
+                "ID":           t,
+                "SortOrder":    t,
+                "StartTime":    str(start_time.strftime('%Y-%m-%dT%H:%M:%SZ')),
+                "Effort":       str(int(op_info['RPT'])) + ":00:00",
+            }
+            data.append(d)
+        with open('sample.json', 'w') as f:
+            json.dump(data, f, indent=4)
     
+    def google_chart_gantt_input(self, input_file_name):
+        data = []
+        for t, op_info in enumerate(self.history):
+            interval = [
+                'Machine %d' %(op_info['machine_id']), 
+                'Job%d, Op%d, Start time:%f, RPT:%f, Finish Time:%f' %(
+                    op_info['job_id'], op_info['op_id'], 
+                    op_info['start_time'], op_info['RPT'], op_info['finish_time']),
+                'new Date(%d,0,0)' %(op_info['start_time']),
+                'new Date(%d,0,0)' %(op_info['finish_time'])
+            ]
+            machine_str = 'Machine %d' %(op_info['machine_id'])
+            info_str = 'Job%d, Op%d, Start time:%f, RPT:%f, Finish Time:%f' %(
+                    op_info['job_id'], op_info['op_id'], 
+                    op_info['start_time'], op_info['RPT'], op_info['finish_time']),
+            start_str = 'new Date(%d,0,0)' %(op_info['start_time'])
+            finish_str = 'new Date(%d,0,0)' %(op_info['finish_time'])
+            
+            data.append(interval)
+        with open(input_file_name, "w") as f:
+            json.dump(str(data), f)
+
     def __str__(self):
         s = ''
         for job_info in self.jobs_to_schedule:
@@ -163,7 +191,7 @@ class DJSP_Logger(object):
             job_id = op_info['job_id']
             machine_id = op_info['machine_id']
             s += 'machine_id: {}, job_type: {}, job_id: {}, op_id: {}, op.start_time: {}, op.finish_time: {}, op.RPT: {}\n'.format(
-                machine_id, op_info['job_type'], job_id, op_info['op_id'], op_info['startTime'], op_info['finishTime'], op_info['RPT'])
+                machine_id, op_info['job_type'], job_id, op_info['op_id'], op_info['start_time'], op_info['finish_time'], op_info['RPT'])
         return s
     
 if __name__ == '__main__':
