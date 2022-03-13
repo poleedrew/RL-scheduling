@@ -41,13 +41,13 @@ class DJSP_Plotter(object):
             df, x_start='StartDateTime', x_end='FinishDateTime', y='machine_id', color=color_by, 
             hover_name='job_id', hover_data=['job_id', 'op_id', 'process_time', 'Start', 'Finish'])
         fig.update_layout(xaxis_type='date')    # ['-', 'linear', 'log', 'date', 'category', 'multicategory']
-        fig.update_layout(
-            xaxis = dict(
-                tickmode = 'linear',
-                tick0 = 0,
-                dtick = 100
-            )
-        )
+        # fig.update_layout(
+        #     xaxis = dict(
+        #         tickmode = 'linear',
+        #         tick0 = 0,
+        #         dtick = 100
+        #     )
+        # )
         fig.write_html(html_name)
 
 if __name__ == '__main__':

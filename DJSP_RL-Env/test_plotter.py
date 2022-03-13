@@ -7,6 +7,7 @@ if __name__ == '__main__':
     logger = DJSP_Logger()
     plotter = DJSP_Plotter(logger)
     logger.load(json_in_file)
-    print(logger)
-    plotter.plot_googlechart_timeline('abz5.html')
+    # print(logger)
+    plotter.plot_googlechart_timeline('abz5_google_chart.html')
+    plotter.plot_plotly_timeline('abz5_plotly.html')
 

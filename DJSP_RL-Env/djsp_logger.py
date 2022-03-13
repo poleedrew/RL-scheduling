@@ -110,12 +110,12 @@ class DJSP_Logger(object):
         #             op_info['timestamp'], op_info['machine_id'], op_info['job_type'], op_info['job_id'], op_info['op_id'], 
         #             op_info['start_time'], op_info['finish_time'], op_info['process_time']))
     
-    def save(self, file_name):
-        with open(file_name, 'w') as f:
+    def save(self, json_out_file):
+        with open(json_out_file, 'w') as f:
             json.dump(self.history, f, indent=4)
 
-    def load(self, file_name):
-        with open(file_name, 'r') as f:
+    def load(self, json_in_file):
+        with open(json_in_file, 'r') as f:
             self.history = list(json.load(f))
     
     def get_plotly_timeline_input(self):        
